@@ -1,0 +1,253 @@
+import Layout from "@/components/Layout";
+import Button from "@/components/Common/button";
+import Section from "@/components/Common/section";
+import Alert from "@/components/Common/alert";
+import Tabs from "@/components/Common/tab";
+import Step from "@/components/Common/step";
+import Card from "@/components/Common/card";
+import Important from "@/components/Common/important";
+import Highlight from "react-highlight";
+import Link from "next/link";
+import NextPage from "@/components/Common/nextpage";
+
+import Head from "next/head";
+
+<Layout>
+<Head>
+<title>مستندات اتصال به دامنه روش DNS-01 Challenge در Ubuntu - لیارا</title>
+<meta property="og:title" content="مستندات خدمات رایانش ابری لیارا" />
+<meta property="og:description" content="مستندات مربوط به نحوه اتصال به دامنه با استفاده از روش DNS-01 Challenge به همراه تهیه گواهی SSL در سرور مجازی اوبونتو Ubuntu در لیارا"  />
+</Head>
+
+# اتصال دامنه به سرور Ubuntu با روش DNS-01 Challenge
+<hr className="mb-2" />
+
+بر اساس مستندات رسمی <a href="https://letsencrypt.org/docs/challenge-types/?utm_source=liara.ir" className="text-[#2196f3]">Let's Encrypt</a>، در روش DNS-01 Challenge مالکیت دامنه از طریق ایجاد یک رکورد TXT با نام <Important>&lt;acme-challenge.&lt;domain_</Important> در تنظیمات DNS تأیید می‌شود. 
+پس از ثبت این رکورد، سرورهای Let's Encrypt آن را بررسی کرده و در صورت تطابق مقدار، گواهی SSL صادر می‌کنند.
+
+<div className="h-4" />
+
+
+مهم‌ترین مزیت DNS-01 نسبت به <a href="/iaas/ubuntu/how-tos/connect-domain/" className="text-[#2196f3]">HTTP-01 Challenge</a>، این است که علاوه بر امکان صدور گواهی‌های Wildcard (مانند <Important>example.com.*</Important>)، برای دامنه‌هایی که وب‌سرور آن‌ها در اینترنت عمومی در دسترس نیست یا از چندین وب‌سرور و Load Balancer استفاده می‌کنند نیز به‌خوبی عمل می‌کند و وابسته به باز بودن پورت 80 یا قرار دادن فایل روی وب‌سرور نیست. 
+
+<div className="h-4" />
+
+در ادامه، روش اتصال دامنه به سرور مجازی اوبونتو با استفاده از روش DNS-01 Challenge، به صورت قدم‌به‌قدم، قرار گرفته است: 
+
+
+<Section id="connect-domain" title="آموزش اتصال دامنه به سرور مجازی اوبونتو" />
+
+<Step  steps={[
+    {
+        step: "۱",
+        content: (
+            <>
+                <h3>اضافه کردن دو رکورد <Important>A</Important> به سامانه مدیریت دامنه</h3>   
+                <div className="h-4" />
+                <p>
+                    در ابتدا، بایستی دامنه خود را در یک سامانه مدیریت دامنه، مانند <a href="https://www.cloudflare.com/products/dns/?utm_source=liara.ir" className="text-[#2196f3]">Cloudflare</a> یا <a href="https://liara.ir/products/dns/?utm_source=docs.liara.ir" className="text-[#2196f3]">لیارا</a>، ثبت کنید. سپس، 
+                    دو رکورد از نوع <Important>A</Important> با نام <Important>@</Important> و <Important>www</Important> و مقدار IP سرور مجازی ابری‌تان که در بخش <b>اتصال</b> سرور مجازی ابری در کنسول لیارا، قرار گرفته است؛ به آن، اضافه کنید.
+                </p>
+                <div className="h-4" />
+                <video
+                src="https://media.liara.ir/vps/add-cloud-server-ip-as-a-record-on-liara-dns-management-system.mp4"
+                controls="controls"
+                className="block w-full"
+                width="100%"
+                />
+            </>
+        )
+    },
+    {
+        step: "۲",
+        content: (
+            <>
+                <h3>نصب وب‌سرور NginX</h3>   
+                <p>
+                    پس از <a href="/iaas/ubuntu/how-tos/connect-to-server-using-ssh" className="text-[#2196f3]">اتصال به سرور مجازی ابری خود با استفاده از SSH</a>، کافیست تا با اجرای دستور زیر، NginX را بر روی سرور خود، نصب کنید:
+                </p>
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="bash">
+                        {`sudo apt update && sudo apt install -y nginx`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />                         
+            </>
+        )
+    },
+    {
+        step: "۳",
+        content: (
+            <>
+                <h3>پیکربندی یک Virtual Host جدید</h3>   
+                <p>
+                    با اجرای دستور زیر، یک فایل پیکربندی جدید ایجاد کنید (به جای <Important>example.com</Important>، نام دامنه خود را وارد کنید):
+                </p>
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="bash">
+                        {`sudo nano /etc/nginx/sites-available/example.com`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />   
+                <p>
+                    در ادامه، قطعه کد زیر را به فایل فوق، اضافه کنید (به جای <Important>example.com</Important>، نام دامنه خود را وارد کنید):
+                </p>
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="config">
+                        {`server {
+listen 80;
+server_name example.com ;
+
+root /var/www/example.com;
+index index.html index.htm index.php;
+
+location / {
+    try_files $uri $uri/ =404;
+}
+}
+`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />  
+                <p>
+                    سپس، برای ذخیره فایل و خروج از nano، دکمه‌های ترکیبی <Important>CTRL + X</Important> را فشرده و سپس <Important>Y</Important> را انتخاب کنید و در نهایت <Important>Enter</Important> را بزنید. 
+                    در ادامه، یک دایرکتوری وب، ایجاد کنید (به جای <Important>example.com</Important>، نام دامنه خود را وارد کنید):
+                </p>
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="bash">
+                        {`sudo mkdir -p /var/www/example.com`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />   
+                <p>
+                    و یک فایل تست، به آن، اضافه کنید (به جای <Important>example.com</Important>، نام دامنه خود را وارد کنید):
+                </p>
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="bash">
+                        {`echo '<h1>It works on Nginx!</h1>' | sudo tee /var/www/example.com/index.html`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />   
+                <p>
+                    در ادامه، دسترسی‌های لازم را به فایل ایجاد شده، اعطا کنید (به جای <Important>example.com</Important>، نام دامنه خود را وارد کنید):
+                </p>
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="bash">
+                        {`sudo chown -R www-data:www-data /var/www/example.com`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />
+                <p>
+                    پیکربندی ایجاد شده را، فعال کنید (به جای <Important>example.com</Important>، نام دامنه خود را وارد کنید):
+                </p>
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="bash">
+                        {`sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />  
+                <p>
+                    در نهایت، Nginx را، ری‌استارت کنید:
+                </p>
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="bash">
+                        {`sudo systemctl restart nginx`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />   
+            </>
+        )
+    },
+    {
+        step: "۴",
+        content: (
+            <>
+                <h3>نصب گواهی SSL (با Let's Encrypt)</h3>   
+                <p>
+                    با اجرای دستور زیر، پکیج <Important>Certbot</Important> را نصب کنید:
+                </p>
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="bash">
+                        {`sudo apt install -y certbot python3-certbot-nginx`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />
+                <p>
+                    در ادامه، دستور زیر را اجرا کنید تا Certbot یک گواهی SSL تهیه کند و <Important>HTTP</Important> را به <Important>HTTPS</Important>، ری‌دایرکت کند (به جای <Important>example.com</Important>، نام دامنه خود را وارد کنید):   
+                </p>
+                
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="bash">
+                        {`sudo certbot --nginx -d example.com`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />
+            </>
+        )
+    },
+    {
+        step: "۵",
+        content: (
+            <>
+                <h3>تنظیم تمدید خودکار SSL</h3>   
+                <p>
+                    با اجرای دستور زیر، تمدید خودکار گواهی SSL را برای دامنه خود، تنظیم کنید: 
+                </p>
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="bash">
+                        {`sudo certbot renew --dry-run`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />      
+            </>
+        )
+    },
+    {
+        step: "۶",
+        content: (
+            <>
+                <h3>بررسی پیکربندی</h3>   
+                <p>
+                    تمامی کارها، انجام شده است و اکنون، کافیست تا وب‌سرور خود را، ری‌استارت کنید:
+                </p>
+                <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="bash">
+                        {`sudo systemctl restart nginx`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />  
+                <p>
+                    اکنون، می‌توانید در مرورگر، دامنه‌تان را وارد کنید تا به صفحه تستی که ساختید، هدایت شوید (به جای <Important>example.com</Important>، نام دامنه خود را وارد کنید):
+                </p>   
+                                    <div className="h-2" />
+                <div dir='ltr'>
+                    <Highlight className="js">
+                        {`https://example.com`}
+                    </Highlight>
+                </div>
+                <div className="h-2" />  
+                <p>
+                    در صورتی که صفحه سایت، با موفقیت، برایتان بالا آمد؛ بدین معناست که تمامی کارها 
+                    را به درستی انجام داده‌اید و دامنه شما به سرور مجازی ابری‌تان، متصل شده است.
+                </p>
+            </>
+        )
+    },
+]}
+/>
+
+
+
+</Layout>

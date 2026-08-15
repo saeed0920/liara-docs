@@ -334,6 +334,11 @@ export default {
         link: "/ai/hugging-face"
       },
       {
+        title: "Tencent",
+        icon: <IconContainer alt="https://media.liara.ir/logos/ai/tencent.svg" />,
+        link: "/ai/tencent"
+      },
+      {
         hr: true
       },
       {
@@ -4310,9 +4315,13 @@ export default {
         link: "/iaas/ubuntu/how-tos/connect-to-server-using-ssh"
       },
       {
-        title: "اتصال دامنه به سرور با SSL",
+        title: "اتصال دامنه (HTTP-01 challenge)",
         link: "/iaas/ubuntu/how-tos/connect-domain"
       },
+      // {
+      //   title: "اتصال دامنه (DNS-01 challenge)",
+      //   link: "/iaas/ubuntu/how-tos/connect-domain-dns-challenge"
+      // },
       {
         title: "ساخت کاربر جدید",
         link: "/iaas/ubuntu/how-tos/create-new-user"

@@ -16,7 +16,8 @@ const CATEGORIES = [
   "minimax",
   "aion-labs",
   "intfloat",
-  "xiaomi"
+  "xiaomi",
+  "tencent",
 ];
 
 function categorizeModel(modelId) {
