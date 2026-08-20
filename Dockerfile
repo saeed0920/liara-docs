@@ -1,5 +1,5 @@
 # 1) Build
-FROM node:20-alpine AS builder
+FROM docker-mirror.liara.ir/node:22-alpine AS builder
 
 ARG MY_BASE_URL
 ARG MY_API_KEY
@@ -9,8 +9,9 @@ ENV MY_API_KEY=$MY_API_KEY
 
 WORKDIR /app
 
-COPY package.json yarn.lock /app/
-RUN yarn install --frozen-lockfile
+COPY package*.json /app/
+
+RUN npm ci
 
 COPY . /app/
 

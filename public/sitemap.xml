@@ -3254,6 +3254,12 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/one-click-apps/jitsi/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/one-click-apps/jupyter-notebook/how-tos/choose-version/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
