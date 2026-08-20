@@ -2,7 +2,709 @@
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       
             <url>
+              <loc>https://docs.liara.ir/admin/index/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/ai/about/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/about/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/embeddings/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/error-handling/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/generating-structured-data/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/generating-text/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/middleware/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/prompt-engineering/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/provider-management/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/settings/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/telemetry/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/testing/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-core/tool-calling/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-errors/about/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-errors/ai-api-call-error/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-ui/about/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-ui/chatbot-message-persistence/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-ui/chatbot-tool-usage/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/ai-sdk-ui/chatbot/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/aionlabs/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/anthropic-claude/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/connect-to-service/about/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/connect-to-service/cline/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/connect-to-service/kilo-code/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/connect-to-service/n8n/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/connect-to-service/openclaw/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/connect-to-service/openweb/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/connect-to-service/sillytavern/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/about/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/api-servers/express/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/api-servers/fastify/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/api-servers/hono/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/api-servers/nest/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/api-servers/node-http-server/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/deepseek-r1/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/multi-modal-chatbot/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/natural-language-postgres/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/caching-middleware/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/call-tools-in-parallel/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/call-tools-multiple-steps/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/call-tools/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/generate-object/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/generate-text-with-chat-prompt/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/generate-text/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/human-in-the-loop/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/markdown-chatbot-with-memoization/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/render-visual-interface-in-chat/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/send-custom-body-from-use-chat/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/stream-object/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/stream-text-multistep/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/stream-text-with-chat-prompt/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/stream-text-with-image-prompt/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nextjs/stream-text/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/call-tools-in-parallel/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/call-tools-multiple-steps/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/call-tools-with-image-prompt/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/call-tools/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/generate-object-reasoning/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/generate-object/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/generate-text-with-chat-prompt/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/generate-text/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/intercept-fetch-requests/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/local-caching-middleware/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/stream-object-record-final-object/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/stream-object-with-image-prompt/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/stream-object/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/stream-text-with-chat-prompt/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/stream-text-with-image-prompt/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/nodejs/stream-text/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/openai-gpt-4-1/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/openai-o4-mini/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/rag-chatbot/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/rsc/call-tools-in-parallel/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/rsc/call-tools/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/rsc/generate-object/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/rsc/generate-text-with-chat-prompt/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/rsc/generate-text/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/rsc/save-messages-to-database/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/rsc/stream-object/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/rsc/stream-text-with-chat-prompt/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/rsc/stream-text/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/slackbot/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/cookbook/translator-telegrambot/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/deepseek/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/details/about/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/details/change-plan/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/details/conversation/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/details/delete/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/details/full-log-request/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/details/id/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/details/keys/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/details/logs/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/details/monitorings/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/details/performance-optimization/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/details/plans/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/faq/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/foundations/agents/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/foundations/image-generation/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/foundations/overview/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/foundations/prompts/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/foundations/streaming/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/foundations/tools/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/foundations/websearch/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/getting-started/about/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/getting-started/expo/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/getting-started/nextjs-app-router/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/getting-started/nextjs-page-router/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/getting-started/nodejs/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/getting-started/nuxt/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/getting-started/svelte/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/google-gemini/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/grok-x-ai/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/hugging-face/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/meta-llama/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/minimax/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/mistral-nemo/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/moonshotai/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -14,7 +716,91 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/ai/perplexity/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/ai/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/qwen/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/references/about/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/references/jsonschema/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/references/zodschema/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/tencent/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/xiaomi/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/ai/z-ai/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/api/chat/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/api/config/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/api/login/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/api/logout/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/api/me/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/api/stats/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -404,6 +1190,12 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/dbaas/mongodb/inspector/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/dbaas/mongodb/quick-setup/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -669,6 +1461,12 @@
           
             <url>
               <loc>https://docs.liara.ir/dbaas/postgresql/create-user/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/dbaas/postgresql/extensions/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -1004,6 +1802,12 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/dbaas/restore-using-console/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/dns-management-system/about/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -1077,6 +1881,12 @@
           
             <url>
               <loc>https://docs.liara.ir/email-server/details/delete-email-server/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/email-server/details/dmarc-record/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -1256,6 +2066,12 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/email-server/how-tos/use-cc-bcc/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/email-server/how-tos/use-tags/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -1412,6 +2228,12 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/iaas/details/console/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/iaas/details/delete-server/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -1466,6 +2288,12 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/iaas/details/snapshot/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/iaas/details/ssh-key/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -1485,6 +2313,12 @@
           
             <url>
               <loc>https://docs.liara.ir/iaas/disks/create/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/iaas/disks/extend-disk/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -1527,6 +2361,12 @@
           
             <url>
               <loc>https://docs.liara.ir/iaas/ubuntu/how-tos/change-ssh-port/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/iaas/ubuntu/how-tos/connect-domain-dns-challenge/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -1617,6 +2457,150 @@
           
             <url>
               <loc>https://docs.liara.ir/iaas/ubuntu/related-links/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/iaas/windowsserver/choose-version/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/iaas/windowsserver/getting-started/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/iaas/windowsserver/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/about/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/alma-linux/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/alpine-linux/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/arch-linux/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/centos/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/composer/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/debian/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/docker/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/fedora/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/ghcr/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/go/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/k8s/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/manjaro/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/mcr/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/npm/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/nuget/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/opensuse/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/pypi/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/quay/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/rocky-linux/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/mirrors/ubuntu/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -1808,12 +2792,6 @@
             </url>
           
             <url>
-              <loc>https://docs.liara.ir/object-storage/how-tos/see-file/</loc>
-              <changefreq>daily</changefreq>
-              <priority>0.7</priority>
-            </url>
-          
-            <url>
               <loc>https://docs.liara.ir/object-storage/how-tos/share-file/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -1922,6 +2900,12 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/one-click-apps/appwrite/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/one-click-apps/automatisch/how-tos/choose-version/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -1941,6 +2925,18 @@
           
             <url>
               <loc>https://docs.liara.ir/one-click-apps/chatwoot/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/one-click-apps/checkcle/how-tos/choose-version/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/one-click-apps/checkcle/quick-start/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -1989,6 +2985,12 @@
           
             <url>
               <loc>https://docs.liara.ir/one-click-apps/discourse/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/one-click-apps/docker/quick-start/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -2109,6 +3111,12 @@
           
             <url>
               <loc>https://docs.liara.ir/one-click-apps/gitea/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/one-click-apps/gitlabce/quick-start/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -2396,6 +3404,18 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/one-click-apps/memos/how-tos/choose-version/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/one-click-apps/memos/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/one-click-apps/metabase/how-tos/choose-version/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -2528,6 +3548,18 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/one-click-apps/openwebui/how-tos/choose-version/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/one-click-apps/openwebui/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/one-click-apps/paperless/how-tos/choose-version/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -2606,6 +3638,18 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/one-click-apps/qdrant/how-tos/choose-version/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/one-click-apps/qdrant/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/one-click-apps/rallly/how-tos/choose-version/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -2618,6 +3662,12 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/one-click-apps/registry/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/one-click-apps/rocketchat/how-tos/choose-version/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -2625,6 +3675,12 @@
           
             <url>
               <loc>https://docs.liara.ir/one-click-apps/rocketchat/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/one-click-apps/sentry/quick-start/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -2649,6 +3705,12 @@
           
             <url>
               <loc>https://docs.liara.ir/one-click-apps/strapi/quick-start/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/one-click-apps/supabase/quick-start/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -3164,6 +4226,12 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/paas/disks/restore-backup-using-console/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/paas/disks/restore-backup-using-ftp/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -3500,6 +4568,12 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/paas/domains/acme-challenge-record/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/paas/domains/add-domain/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -3507,6 +4581,12 @@
           
             <url>
               <loc>https://docs.liara.ir/paas/domains/add-subdomains/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/paas/domains/add-wildcard-domain/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -3537,6 +4617,12 @@
           
             <url>
               <loc>https://docs.liara.ir/paas/domains/move/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/paas/domains/redirect-url/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
@@ -4046,6 +5132,12 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/paas/laravel/how-tos/configure-https-for-assets/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/paas/laravel/how-tos/configure-livewire-trusted-proxy/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -4173,6 +5265,12 @@
           
             <url>
               <loc>https://docs.liara.ir/paas/laravel/how-tos/set-status-page/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/paas/laravel/how-tos/use-browsershot/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>

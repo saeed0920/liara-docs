@@ -1,0 +1,2207 @@
+[
+  {
+    "source": "/app-deploy/nodejs/getting-started",
+    "destination": "/paas/nodejs/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/:g1(browser|cli)",
+    "destination": "/paas/nodejs/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/envs",
+    "destination": "/paas/nodejs/how-tos/set-envs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/logs",
+    "destination": "/paas/nodejs/how-tos/set-logs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/liarajson",
+    "destination": "/paas/nodejs/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/dbs",
+    "destination": "/paas/nodejs/how-tos/connect-to-db/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/disks",
+    "destination": "/paas/nodejs/how-tos/use-disk",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/object-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/nodejs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/websocket",
+    "destination": "/paas/nodejs/how-tos/use-websocket",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/email",
+    "destination": "/email-server/how-tos/connect-via-platform/nodejs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/hooks",
+    "destination": "/paas/nodejs/how-tos/use-hooks",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/tips",
+    "destination": "/paas/nodejs/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nextjs/getting-started",
+    "destination": "/paas/nextjs/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nextjs/:g1(browser|cli)",
+    "destination": "/paas/nextjs/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nextjs/logs",
+    "destination": "/paas/nextjs/how-tos/set-logs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nextjs/liarajson",
+    "destination": "/paas/nextjs/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nextjs/dbs",
+    "destination": "/paas/nextjs/how-tos/connect-to-db/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nextjs/object-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/nextjs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nextjs/email",
+    "destination": "/email-server/how-tos/connect-via-platform/nextjs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nextjs/hooks",
+    "destination": "/paas/nextjs/how-tos/use-hooks",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nextjs/tips",
+    "destination": "/paas/nextjs/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/getting-started",
+    "destination": "/paas/laravel/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/:g1(browser|cli)",
+    "destination": "/paas/laravel/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/envs",
+    "destination": "/paas/laravel/how-tos/set-envs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/logs",
+    "destination": "/paas/laravel/how-tos/manage-laravel-logs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/liarajson",
+    "destination": "/paas/laravel/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/dbs",
+    "destination": "/paas/laravel/how-tos/connect-to-db/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/migrations",
+    "destination": "/paas/laravel/how-tos/connect-to-db/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/disks",
+    "destination": "/paas/laravel/how-tos/use-disk",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/object-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/laravel",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/email",
+    "destination": "/email-server/how-tos/connect-via-platform/laravel",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/hooks",
+    "destination": "/paas/laravel/how-tos/use-hooks",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/tips",
+    "destination": "/paas/laravel/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/soketi",
+    "destination": "/one-click-apps/soketi/how-tos/connect-by-laravel",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/getting-started",
+    "destination": "/paas/php/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/:g1(browser|cli)",
+    "destination": "/paas/php/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/envs",
+    "destination": "/paas/php/how-tos/set-envs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/logs",
+    "destination": "/paas/php/how-tos/set-logs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/liarajson",
+    "destination": "/paas/php/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/dbs",
+    "destination": "/paas/php/how-tos/connect-to-db/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/disks",
+    "destination": "/paas/php/how-tos/use-disk",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/object-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/php",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/email",
+    "destination": "/email-server/how-tos/connect-via-platform/php",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/hooks",
+    "destination": "/paas/php/how-tos/use-hooks",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/tips",
+    "destination": "/paas/php/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/getting-started",
+    "destination": "/paas/django/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/:g1(browser|cli)",
+    "destination": "/paas/django/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/envs",
+    "destination": "/paas/django/how-tos/set-envs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/logs",
+    "destination": "/paas/django/how-tos/set-logs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/liarajson",
+    "destination": "/paas/django/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/dbs",
+    "destination": "/paas/django/how-tos/connect-to-db/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/migrations",
+    "destination": "/paas/django/how-tos/connect-to-db/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/disks",
+    "destination": "/paas/django/how-tos/use-disk",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/object-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/django",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/email",
+    "destination": "/email-server/how-tos/connect-via-platform/django",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/hooks",
+    "destination": "/paas/django/how-tos/use-hooks",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/tips",
+    "destination": "/paas/django/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/websocket",
+    "destination": "/paas/django/how-tos/use-websocket",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/getting-started",
+    "destination": "/paas/flask/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/:g1(browser|cli)",
+    "destination": "/paas/flask/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/envs",
+    "destination": "/paas/flask/how-tos/set-envs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/logs",
+    "destination": "/paas/flask/how-tos/set-logs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/liarajson",
+    "destination": "/paas/flask/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/dbs",
+    "destination": "/paas/flask/how-tos/connect-to-db/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/disks",
+    "destination": "/paas/flask/how-tos/use-disk",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/object-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/flask",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/email",
+    "destination": "/email-server/how-tos/connect-via-platform/flask",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/hooks",
+    "destination": "/paas/flask/how-tos/use-hooks",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/tips",
+    "destination": "/paas/flask/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/getting-started",
+    "destination": "/paas/dotnet/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/:g1(browser|cli)",
+    "destination": "/paas/dotnet/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/envs",
+    "destination": "/paas/dotnet/how-tos/set-envs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/logs",
+    "destination": "/paas/dotnet/how-tos/set-logs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/liarajson",
+    "destination": "/paas/dotnet/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/:g1(dbs|entity-framework)",
+    "destination": "/paas/dotnet/how-tos/connect-to-db/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/disks",
+    "destination": "/paas/dotnet/how-tos/use-disk",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/object-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/dotnet",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/email",
+    "destination": "/email-server/how-tos/connect-via-platform/dotnet",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/hooks",
+    "destination": "/paas/dotnet/how-tos/use-hooks",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/tips",
+    "destination": "/paas/dotnet/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/dotnet/websocket",
+    "destination": "/paas/dotnet/how-tos/use-websocket",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/react/getting-started",
+    "destination": "/paas/react/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/react/:g1(browser|cli)",
+    "destination": "/paas/react/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/react/logs",
+    "destination": "/paas/details/observations/software",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/react/liarajson",
+    "destination": "/paas/react/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/react/tips",
+    "destination": "/paas/react/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/angular/getting-started",
+    "destination": "/paas/angular/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/angular/:g1(browser|cli)",
+    "destination": "/paas/angular/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/angular/logs",
+    "destination": "/paas/details/observations/software",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/angular/liarajson",
+    "destination": "/paas/angular/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/angular/tips",
+    "destination": "/paas/angular/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/vue/getting-started",
+    "destination": "/paas/vue/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/vue/:g1(browser|cli)",
+    "destination": "/paas/vue/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/vue/logs",
+    "destination": "/paas/details/observations/software",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/vue/liarajson",
+    "destination": "/paas/vue/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/vue/tips",
+    "destination": "/paas/vue/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/static/getting-started",
+    "destination": "/paas/static/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/static/:g1(browser|cli)",
+    "destination": "/paas/static/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/static/logs",
+    "destination": "/paas/details/observations/software",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/static/liarajson",
+    "destination": "/paas/static/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/static/tips",
+    "destination": "/paas/static/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/docker/getting-started",
+    "destination": "/paas/docker/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/docker/:g1(browser|cli)",
+    "destination": "/paas/docker/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/docker/envs",
+    "destination": "/paas/details/envs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/docker/logs",
+    "destination": "/paas/details/observations/software",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/docker/liarajson",
+    "destination": "/paas/docker/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/docker/disks",
+    "destination": "/paas/docker/how-tos/use-disk",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/docker/tips",
+    "destination": "/paas/docker/how-tos/create-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/docker/deploy-image",
+    "destination": "/paas/docker/how-tos/deploy-image-from-dockerhub",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/docker/compose",
+    "destination": "/paas/docker/how-tos/deploy-docker-compose",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/:g1(go|golang)/:g2(browser|cli|getting-started)",
+    "destination": "/paas/docker/related-apps/go",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/:g1(go|golang)/envs",
+    "destination": "/paas/details/envs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/:g1(go|golang)/logs",
+    "destination": "/paas/details/observations/software",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/:g1(go|golang)/liarajson",
+    "destination": "/paas/docker/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/:g1(go|golang)/disks",
+    "destination": "/paas/docker/how-tos/use-disk",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/:g1(go|golang)/object-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/go",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/:g1(go|golang)/email",
+    "destination": "/email-server/how-tos/connect-via-platform/go",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/headless-chrome/install",
+    "destination": "/one-click-apps/headless-chrome/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/headless-chrome/puppeteer",
+    "destination": "/one-click-apps/headless-chrome/how-tos/connect-by-nodejs-and-puppeteer",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/headless-chrome/selenium",
+    "destination": "/one-click-apps/headless-chrome/how-tos/connect-by-python-and-selenium",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/headless-chrome/playwright",
+    "destination": "/headless-chrome/how-tos/connect-by-nodejs-and-playwright",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/headless-chrome/tips",
+    "destination": "/one-click-apps/headless-chrome/how-tos/choose-version",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/soketi/install",
+    "destination": "/one-click-apps/soketi/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/soketi/laravel",
+    "destination": "/one-click-apps/soketi/how-tos/connect-by-laravel",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/soketi/tips",
+    "destination": "/one-click-apps/soketi/how-tos/choose-version",
+    "permanent": true
+  },
+  {
+    "source": "/wp-plus/install",
+    "destination": "/one-click-apps/wordpress/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/wp-plus/email",
+    "destination": "/email-server/how-tos/connect-via-platform/wordpress",
+    "permanent": true
+  },
+  {
+    "source": "/wp-plus/migrate-from-cpanel",
+    "destination": "/one-click-apps/wordpress/how-tos/migrate-from-cpanel",
+    "permanent": true
+  },
+  {
+    "source": "/wp-plus/duplicator",
+    "destination": "/one-click-apps/wordpress/how-tos/duplicator",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/apache%20answer/quick-start",
+    "destination": "/one-click-apps/apache-answer/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/code%20server/quick-start",
+    "destination": "/one-click-apps/vscode/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/chrome/quick-start",
+    "destination": "/one-click-apps/headless-chrome/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/rocket.chat/quick-start",
+    "destination": "/one-click-apps/rocketchat/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/uptime%20kuma/quick-start",
+    "destination": "/one-click-apps/uptime-kuma/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/varnish%20cache/quick-start",
+    "destination": "/one-click-apps/varnish/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/jupyter%20notebook/quick-start",
+    "destination": "/one-click-apps/jupyter-notebook/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/imgproxy",
+    "destination": "/one-click-apps/imgproxy/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/rocketchat",
+    "destination": "/one-click-apps/rocketchat/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/metabase",
+    "destination": "/one-click-apps/metabase/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/nextcloud",
+    "destination": "/one-click-apps/nextcloud/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/gitea",
+    "destination": "/one-click-apps/gitea/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/mattermost",
+    "destination": "/one-click-apps/mattermost/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/kibana",
+    "destination": "/one-click-apps/kibana/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/grafana",
+    "destination": "/one-click-apps/grafana/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/prestashop",
+    "destination": "/one-click-apps/prestashop/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/vscode",
+    "destination": "/one-click-apps/vscode/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/odoo",
+    "destination": "/one-click-apps/odoo/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/ghost",
+    "destination": "/one-click-apps/ghost/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/n8n",
+    "destination": "/one-click-apps/n8n/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/pocketbase",
+    "destination": "/one-click-apps/pocketbase/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/matomo",
+    "destination": "/one-click-apps/matomo/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/unleash",
+    "destination": "/one-click-apps/unleash/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/ackee",
+    "destination": "/one-click-apps/ackee/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/appsmith",
+    "destination": "/one-click-apps/appsmith/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/varnish",
+    "destination": "/one-click-apps/varnish/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/rabbitmq",
+    "destination": "/dbaas/rabbitmq/quick-setup/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/apacheanswer",
+    "destination": "/one-click-apps/apache-answer/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/chroma",
+    "destination": "/one-click-apps/chroma/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/meilisearch",
+    "destination": "/one-click-apps/meilisearch/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/nuxtjs",
+    "destination": "/paas/nodejs/related-apps/nuxtjs",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/svelte",
+    "destination": "/paas/nodejs/related-apps/svelte",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/sveltekit",
+    "destination": "/paas/nodejs/related-apps/svelte-kit",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/nestjs",
+    "destination": "/paas/nodejs/related-apps/nestjs",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/fastify",
+    "destination": "/paas/nodejs/related-apps/fastify",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/remix",
+    "destination": "/paas/nodejs/related-apps/remix",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/qwik",
+    "destination": "/paas/nodejs/related-apps/qwik",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/strapi",
+    "destination": "/paas/nodejs/related-apps/strapi/starter",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/astro",
+    "destination": "/paas/static/related-apps/astro",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/drizzle",
+    "destination": "/paas/nodejs/how-tos/connect-to-db/drizzle/about",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/gridsome",
+    "destination": "/paas/static/related-apps/gridsome",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/eleventy",
+    "destination": "/paas/static/related-apps/eleventy",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/hugo",
+    "destination": "/paas/static/related-apps/hugo",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/adonis",
+    "destination": "/paas/nodejs/related-apps/adonisjs",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/prisma",
+    "destination": "/paas/nodejs/how-tos/connect-to-db/prisma",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/flutter",
+    "destination": "/paas/docker/related-apps/flutter",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/nginx",
+    "destination": "/paas/docker/related-apps/nginx",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/fastapi",
+    "destination": "/paas/docker/related-apps/fastapi",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/python",
+    "destination": "/paas/python/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/paas/docker/related-apps/python",
+    "destination": "/paas/python/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/yii",
+    "destination": "/paas/php/related-apps/yii",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/arangodb",
+    "destination": "/paas/docker/related-apps/arangodb",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/seq",
+    "destination": "/paas/docker/related-apps/seq",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/celery",
+    "destination": "/paas/django/related-apps/celery",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/dotnet-published",
+    "destination": "/paas/dotnet/how-tos/deploy-dll-files",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/voyager",
+    "destination": "/paas/laravel/related-apps/voyager",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/vite",
+    "destination": "/paas/react/how-tos/deploy-app",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/json-server",
+    "destination": "/paas/nodejs/related-apps/json-server",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/websocket",
+    "destination": "/paas/nodejs/how-tos/use-websocket",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/basic-auth",
+    "destination": "/paas/details/basic-auth",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mysql/install",
+    "destination": "/dbaas/mysql/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mysql/connections",
+    "destination": "/dbaas/mysql/how-tos/connect-via-gui/about",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mysql-mariadb/tips/:rest*",
+    "destination": "/dbaas/mysql/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mysql/backup",
+    "destination": "/dbaas/mysql/how-tos/create-backup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mysql/restore",
+    "destination": "/dbaas/mysql/how-tos/restore-backup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mysql/tips",
+    "destination": "/dbaas/mysql/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mariadb/install",
+    "destination": "/dbaas/mariadb/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mariadb/connections",
+    "destination": "/dbaas/mariadb/how-tos/connect-via-gui/about",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mariadb/backup",
+    "destination": "/dbaas/mariadb/how-tos/create-backup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mariadb/restore",
+    "destination": "/dbaas/mariadb/how-tos/restore-backup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mariadb/tips",
+    "destination": "/dbaas/mariadb/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/sqlserver/install",
+    "destination": "/dbaas/mssql/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/sqlserver/connections",
+    "destination": "/dbaas/mssql/how-tos/connect-via-gui/about",
+    "permanent": true
+  },
+  {
+    "source": "/databases/sqlserver/backup",
+    "destination": "/dbaas/mssql/how-tos/create-backup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/sqlserver/restore",
+    "destination": "/dbaas/mssql/how-tos/restore-backup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mongodb/install",
+    "destination": "/dbaas/mongodb/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mongodb/connections",
+    "destination": "/dbaas/mongodb/how-tos/connect-via-gui/about",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mongodb/backup",
+    "destination": "/dbaas/mongodb/how-tos/create-backup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mongodb/restore",
+    "destination": "/dbaas/mongodb/how-tos/restore-backup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/redis/install",
+    "destination": "/dbaas/redis/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/redis/connections",
+    "destination": "/dbaas/redis/how-tos/connect-via-gui/about",
+    "permanent": true
+  },
+  {
+    "source": "/databases/redis/backup",
+    "destination": "/dbaas/redis/how-tos/create-backup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/redis/restore",
+    "destination": "/dbaas/redis/how-tos/restore-backup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/elasticsearch/install",
+    "destination": "/dbaas/elastic-search/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/databases/elasticsearch/connections",
+    "destination": "/dbaas/elastic-search/how-tos/connect-via-platform/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/file-system",
+    "destination": "/paas/details/file-system",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/logs",
+    "destination": "/paas/details/observations/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/environment-variables",
+    "destination": "/paas/details/envs",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/private-network",
+    "destination": "/paas/details/private-network",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/private-registry",
+    "destination": "/paas/details/private-registry",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/console",
+    "destination": "/paas/details/console-shell",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/cron-jobs",
+    "destination": "/paas/nodejs/how-tos/set-cron-job",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/ffmpeg",
+    "destination": "/paas/nodejs/how-tos/use-ffmpeg-module",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/fixed-ip",
+    "destination": "/paas/details/static-ip",
+    "permanent": true
+  },
+  {
+    "source": "/projects/fixed-ip",
+    "destination": "/paas/details/static-ip",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/ignore",
+    "destination": "/paas/details/ignoring-files",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/zero-downtime-deployment",
+    "destination": "/paas/details/zero-downtime-deployment",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/health-check",
+    "destination": "/paas/details/health-check",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/events",
+    "destination": "/paas/details/events",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/custom-dns-servers",
+    "destination": "/paas/details/dns-server-settings",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/build-location",
+    "destination": "/paas/details/build-location",
+    "permanent": true
+  },
+  {
+    "source": "/storage/disks/about",
+    "destination": "/paas/disks/about",
+    "permanent": true
+  },
+  {
+    "source": "/storage/disks/management",
+    "destination": "/paas/disks/create",
+    "permanent": true
+  },
+  {
+    "source": "/storage/disks/increase-size",
+    "destination": "/paas/disks/increase-value",
+    "permanent": true
+  },
+  {
+    "source": "/storage/disks/reduce-size",
+    "destination": "/paas/disks/decrease-value",
+    "permanent": true
+  },
+  {
+    "source": "/storage/disks/ftp",
+    "destination": "/paas/disks/ftp-access",
+    "permanent": true
+  },
+  {
+    "source": "/storage/disks/backup-restore",
+    "destination": "/paas/disks/create-backup",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/about",
+    "destination": "/object-storage/about",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/console",
+    "destination": "/object-storage/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/aws-sdk",
+    "destination": "/object-storage/how-tos/connect-via-platform/about",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/direct-download",
+    "destination": "/object-storage/how-tos/direct-download",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/keys",
+    "destination": "/object-storage/how-tos/create-key",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/resize",
+    "destination": "/object-storage/details/change-plan",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/access-policy",
+    "destination": "/object-storage/how-tos/change-access-level",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/migrate",
+    "destination": "/object-storage/about",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/backup",
+    "destination": "/object-storage/how-tos/create-backup-using-rclone",
+    "permanent": true
+  },
+  {
+    "source": "/cicd/about",
+    "destination": "/paas/cicd/about",
+    "permanent": true
+  },
+  {
+    "source": "/cicd/github",
+    "destination": "/paas/cicd/github",
+    "permanent": true
+  },
+  {
+    "source": "/cicd/gitlab",
+    "destination": "/paas/cicd/github",
+    "permanent": true
+  },
+  {
+    "source": "/dns/add-zone",
+    "destination": "/dns-management-system/how-tos/add-records",
+    "permanent": true
+  },
+  {
+    "source": "/dns/records",
+    "destination": "/dns-management-system/how-tos/manage-records",
+    "permanent": true
+  },
+  {
+    "source": "/email/create-mail-server",
+    "destination": "/email-server/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/email/send-email",
+    "destination": "/email-server/how-tos/send-email-via-console",
+    "permanent": true
+  },
+  {
+    "source": "/email/inbound-email",
+    "destination": "/email-server/how-tos/manage-incoming-emails",
+    "permanent": true
+  },
+  {
+    "source": "/email/tips",
+    "destination": "/email-server/details/about",
+    "permanent": true
+  },
+  {
+    "source": "/browser/about",
+    "destination": "/references/console/about",
+    "permanent": true
+  },
+  {
+    "source": "/cli/install",
+    "destination": "/references/cli/install",
+    "permanent": true
+  },
+  {
+    "source": "/cli/login",
+    "destination": "/references/cli/login",
+    "permanent": true
+  },
+  {
+    "source": "/cli/deploy",
+    "destination": "/references/cli/deploy-app",
+    "permanent": true
+  },
+  {
+    "source": "/cli/disk",
+    "destination": "/references/cli/manage-disks",
+    "permanent": true
+  },
+  {
+    "source": "/cli/env",
+    "destination": "/references/cli/list-envs",
+    "permanent": true
+  },
+  {
+    "source": "/cli/plan",
+    "destination": "/references/cli/see-platform-plans",
+    "permanent": true
+  },
+  {
+    "source": "/cli/account",
+    "destination": "/references/cli/add-account",
+    "permanent": true
+  },
+  {
+    "source": "/cli/auto-complete",
+    "destination": "/references/cli/autocomplete",
+    "permanent": true
+  },
+  {
+    "source": "/cli/commands",
+    "destination": "/references/cli/about",
+    "permanent": true
+  },
+  {
+    "source": "/openapi",
+    "destination": "/references/api/about",
+    "permanent": true
+  },
+  {
+    "source": "/domains",
+    "destination": "/paas/domains/about",
+    "permanent": true
+  },
+  {
+    "source": "/domains/add-domain",
+    "destination": "/paas/domains/add-domain/",
+    "permanent": true
+  },
+  {
+    "source": "/migrate",
+    "destination": "/paas/move",
+    "permanent": true
+  },
+  {
+    "source": "/managing-multiple-accounts",
+    "destination": "/references/console/manage-accounts",
+    "permanent": true
+  },
+  {
+    "source": "/errors/next-config-file",
+    "destination": "/paas/nextjs/fix-common-errors/modify-config-file",
+    "permanent": true
+  },
+  {
+    "source": "/errors/django-settings-file",
+    "destination": "/paas/django/fix-common-errors/multiple-settings-files",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/:g1/update",
+    "destination": "/paas/update",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/blitzjs",
+    "destination": "/paas/nodejs/related-apps/blitzjs",
+    "permanent": true
+  },
+  {
+    "source": "/paas/dotnet/how-tos/set-logs",
+    "destination": "/paas/dotnet/how-tos/manage-logs",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/vue/domain",
+    "destination": "/paas/domains/add-domain",
+    "permanent": true
+  },
+  {
+    "source": "/object-storage/how-tos/migrate-from-file-service",
+    "destination": "/object-storage/about",
+    "permanent": true
+  },
+  {
+    "source": "/email/tag-email",
+    "destination": "/email-server/how-tos/use-tags",
+    "permanent": true
+  },
+  {
+    "source": "/client-api/app",
+    "destination": "/references/api/about",
+    "permanent": true
+  },
+  {
+    "source": "/storage/disks/transfer-to-bucket",
+    "destination": "/paas/disks/move-files-to-bucket",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/uptime-kuma",
+    "destination": "/one-click-apps/uptime-kuma/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/storage/object-storage/increase-size",
+    "destination": "/object-storage/details/change-plan",
+    "permanent": true
+  },
+  {
+    "source": "/storage/object-storage/backup-restore",
+    "destination": "/object-storage/how-tos/create-backup-using-rclone",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/rabbitmq/quick-start",
+    "destination": "/dbaas/rabbitmq/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/wordpress/how-tos/enable-wprocket-extension",
+    "destination": "/one-click-apps/wordpress/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/:g1(go|golang)/dbs",
+    "destination": "/paas/docker/related-apps/go",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/rabbitmq/how-tos/choose-version",
+    "destination": "/dbaas/rabbitmq/choose-version",
+    "permanent": true
+  },
+  {
+    "source": "/cli/app",
+    "destination": "/references/cli/about",
+    "permanent": true
+  },
+  {
+    "source": "/databases/postgresql/install",
+    "destination": "/dbaas/postgresql/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/wp-plus/object-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/wordpress",
+    "permanent": true
+  },
+  {
+    "source": "/storage/nodejs",
+    "destination": "/object-storage/how-tos/connect-via-platform/nodejs",
+    "permanent": true
+  },
+  {
+    "source": "/storage/object-storage/about",
+    "destination": "/object-storage/about",
+    "permanent": true
+  },
+  {
+    "source": "/client-api/domain",
+    "destination": "/references/api/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/static/desktop",
+    "destination": "/paas/static/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nextjs/desktop",
+    "destination": "/paas/nextjs/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/tips",
+    "destination": "/paas/dotnet/how-tos/deploy-app",
+    "permanent": true
+  },
+  {
+    "source": "/deployments/vue",
+    "destination": "/paas/vue/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/:g1/domain",
+    "destination": "/paas/domains/add-domain",
+    "permanent": true
+  },
+  {
+    "source": "/databases/postgresql/connections",
+    "destination": "/dbaas/postgresql/how-tos/connect-via-platform/about",
+    "permanent": true
+  },
+  {
+    "source": "/storage/object-storage/management",
+    "destination": "/object-storage/how-tos/upload-file",
+    "permanent": true
+  },
+  {
+    "source": "/desktop/install",
+    "destination": "/references/console/about",
+    "permanent": true
+  },
+  {
+    "source": "/storage/object-storage/connections",
+    "destination": "/object-storage/how-tos/connect-via-platform/about",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/streamlit",
+    "destination": "/paas/docker/related-apps/streamlit",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/rabbitmq%20draft/quick-start",
+    "destination": "/dbaas/rabbitmq/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/storage/object-storage/cli",
+    "destination": "/object-storage/how-tos/move-bucket",
+    "permanent": true
+  },
+  {
+    "source": "/client-api/about",
+    "destination": "/references/api/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/logs",
+    "destination": "/paas/dotnet/how-tos/set-logs/",
+    "permanent": true
+  },
+  {
+    "source": "/deployments/php",
+    "destination": "/paas/php/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/getting-started",
+    "destination": "/paas/dotnet/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/deployments/netcore",
+    "destination": "/paas/dotnet/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/object-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/dotnet",
+    "permanent": true
+  },
+  {
+    "source": "/deployments/angular",
+    "destination": "/paas/angular/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/envs",
+    "destination": "/paas/dotnet/how-tos/set-envs",
+    "permanent": true
+  },
+  {
+    "source": "/apps/volumes",
+    "destination": "/paas/disks/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/applets",
+    "destination": "/paas/docker/related-apps/applets",
+    "permanent": true
+  },
+  {
+    "source": "/apps/ignore",
+    "destination": "/paas/details/ignoring-files",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/liarajson",
+    "destination": "/paas/dotnet/how-tos/deploy-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/websocket",
+    "destination": "/paas/dotnet/how-tos/use-websocket",
+    "permanent": true
+  },
+  {
+    "source": "/managing-multiple-acounts",
+    "destination": "/references/console/manage-accounts",
+    "permanent": true
+  },
+  {
+    "source": "/deployments/flask",
+    "destination": "/paas/flask/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/apps/console",
+    "destination": "/references/console/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/email",
+    "destination": "/email-server/how-tos/connect-via-platform/dotnet",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/disks",
+    "destination": "/paas/dotnet/how-tos/use-disk",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/:g1/how-tos/quick-start/",
+    "destination": "/one-click-apps/:g1/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/nextjs",
+    "destination": "/paas/nextjs/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/:g1(go|golang)",
+    "destination": "/paas/docker/related-apps/go",
+    "permanent": true
+  },
+  {
+    "source": "/apps/logs",
+    "destination": "/paas/details/observations/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/cloud-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/dotnet",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/dbs",
+    "destination": "/paas/dotnet/how-tos/connect-to-db/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/angular/desktop",
+    "destination": "/paas/angular/how-tos/deploy-app",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/browser",
+    "destination": "/paas/dotnet/how-tos/deploy-app",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mysql-mariadb/install",
+    "destination": "/dbaas/mysql/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/desktop",
+    "destination": "/paas/flask/how-tos/deploy-app",
+    "permanent": true
+  },
+  {
+    "source": "/clients/cli",
+    "destination": "/references/cli/about",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/django/desktop",
+    "destination": "/paas/django/how-tos/deploy-app",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/prestashop",
+    "destination": "/one-click-apps/prestashop/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/deployments/laravel",
+    "destination": "/paas/laravel/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/apps/environment-variables",
+    "destination": "/paas/details/envs/",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mysql-mariadb/backup",
+    "destination": "/dbaas/mariadb/how-tos/create-backup",
+    "permanent": true
+  },
+  {
+    "source": "/apps/fixed-ip",
+    "destination": "/paas/details/static-ip/",
+    "permanent": true
+  },
+  {
+    "source": "/deployments/static",
+    "destination": "/paas/static/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/domain",
+    "destination": "/object-storage/add-domain/",
+    "permanent": true
+  },
+  {
+    "source": "/wp-plus/domain",
+    "destination": "/paas/domains/add-domain/",
+    "permanent": true
+  },
+  {
+    "source": "/deployments/docker",
+    "destination": "/paas/docker/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/vue/desktop",
+    "destination": "/paas/vue/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/apps/disks",
+    "destination": "/paas/disks/about/",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/rabbitmq",
+    "destination": "/dbaas/rabbitmq/quick-setup",
+    "permanent": true
+  },
+  {
+    "source": "/apps/health-check",
+    "destination": "/paas/details/health-check/",
+    "permanent": true
+  },
+  {
+    "source": "/deployments/nodejs",
+    "destination": "/paas/nodejs/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/wordpress",
+    "destination": "/one-click-apps/wordpress/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/php/desktop",
+    "destination": "/paas/php/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/domains/ssl",
+    "destination": "/paas/domains/enable-ssl/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/desktop",
+    "destination": "/paas/laravel/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/apps/ftp",
+    "destination": "/paas/disks/ftp-access/",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/transfer",
+    "destination": "/object-storage/how-tos/move-bucket/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/cli",
+    "destination": "/paas/dotnet/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nextjs/envs",
+    "destination": "/paas/nextjs/how-tos/set-envs/",
+    "permanent": true
+  },
+  {
+    "source": "/:g1*/applets",
+    "destination": "/paas/details/events/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/desktop",
+    "destination": "/paas/dotnet/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/flask/deploy",
+    "destination": "/paas/flask/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/wordpress/email",
+    "destination": "/email-server/how-tos/connect-via-platform/wordpress/",
+    "permanent": true
+  },
+  {
+    "source": "/dns/add-domain",
+    "destination": "/dns-management-system/how-tos/add-records/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/nodejs/desktop",
+    "destination": "/paas/nodejs/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/elasticsearch",
+    "destination": "/dbaas/elastic-search/quick-setup/",
+    "permanent": true
+  },
+  {
+    "source": "/apps/zero-downtime-deployment",
+    "destination": "/paas/details/zero-downtime-deployment/",
+    "permanent": true
+  },
+  {
+    "source": "/projects/console",
+    "destination": "/paas/details/zero-downtime-deployment/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/react/desktop",
+    "destination": "/paas/react/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/wordpress/install",
+    "destination": "/one-click-apps/wordpress/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/databases/postgresql/restore",
+    "destination": "/dbaas/postgresql/how-tos/restore-backup/",
+    "permanent": true
+  },
+  {
+    "source": "/databases/mysql-mariadb/connections",
+    "destination": "/dbaas/mariadb/how-tos/connect-via-platform/about/",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/jekyll",
+    "destination": "/paas/static/related-apps/jekyll/",
+    "permanent": true
+  },
+  {
+    "source": "/email-server/how-tos/connect-via-platform/golang",
+    "destination": "/email-server/how-tos/connect-via-platform/go/",
+    "permanent": true
+  },
+  {
+    "source": "/databases/postgresql/backup",
+    "destination": "/dbaas/postgresql/how-tos/create-backup/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/vue/deploy",
+    "destination": "/paas/vue/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/storage/overview",
+    "destination": "/object-storage/about/",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/gatsbyjs",
+    "destination": "/paas/static/related-apps/gatsby/",
+    "permanent": true
+  },
+  {
+    "source": "/headless-chrome/how-tos/connect-by-nodejs-and-playwright",
+    "destination": "/one-click-apps/headless-chrome/how-tos/connect-by-nodejs-and-playwright/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/nocodb",
+    "destination": "/one-click-apps/nocodb/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/buckets/search",
+    "destination": "/object-storage/how-tos/search-file/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/static/deploy",
+    "destination": "/paas/static/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/apache-answer/how-tos/quick-start",
+    "destination": "/one-click-apps/apache-answer/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/docker/desktop",
+    "destination": "/paas/docker/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/gitea/how-tos/quick-start",
+    "destination": "/one-click-apps/gitea/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/deployments/wordpress",
+    "destination": "/one-click-apps/wordpress/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/grafana",
+    "destination": "/one-click-apps/grafana/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/mattermost",
+    "destination": "/one-click-apps/mattermost/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/asgi",
+    "destination": "/paas/django/how-tos/use-asgi/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/wordpress/migrate-from-cpanel",
+    "destination": "/one-click-apps/wordpress/how-tos/migrate-from-cpanel/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/netcore/entity-framework",
+    "destination": "/paas/dotnet/how-tos/connect-to-db/about/",
+    "permanent": true
+  },
+  {
+    "source": "/deployments/django",
+    "destination": "/paas/django/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/projects/ignore",
+    "destination": "/paas/details/ignoring-files/",
+    "permanent": true
+  },
+  {
+    "source": "/projects/zero-downtime-deployment",
+    "destination": "/paas/details/zero-downtime-deployment/",
+    "permanent": true
+  },
+  {
+    "source": "/instructions/kibana",
+    "destination": "/one-click-apps/kibana/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/app-features/email",
+    "destination": "/email-server/about/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/cloud-storage",
+    "destination": "/object-storage/how-tos/connect-via-platform/laravel/",
+    "permanent": true
+  },
+  {
+    "source": "/databases/tunnel",
+    "destination": "/dbaas/details/connection-links/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/php/how-tos/use-hooks/set-cron-job",
+    "destination": "/paas/php/how-tos/set-cron-job/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/meilisearch/how-tos/quick-start",
+    "destination": "/one-click-apps/meilisearch/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/:g1(go|golang)/desktop",
+    "destination": "/paas/docker/related-apps/go/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/metabase/how-tos/quick-start",
+    "destination": "/one-click-apps/metabase/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/pocketbase/how-tos/quick-start",
+    "destination": "/one-click-apps/pocketbase/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/chroma/how-tos/quick-start",
+    "destination": "/one-click-apps/chroma/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/kibana/how-tos/quick-start",
+    "destination": "/one-click-apps/kibana/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/rabbitmq/how-tos/quick-start",
+    "destination": "/dbaas/rabbitmq/quick-setup/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/n8n/how-tos/quick-start",
+    "destination": "/one-click-apps/n8n/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/ackee/how-tos/quick-start",
+    "destination": "/one-click-apps/ackee/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/rocketchat/how-tos/quick-start",
+    "destination": "/one-click-apps/rocketchat/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/matomo/how-tos/quick-start",
+    "destination": "/one-click-apps/matomo/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/nodejs/related-apps/strapi/how-tos/create-app",
+    "destination": "/paas/nodejs/related-apps/strapi/starter/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/nodejs/related-apps/fix-common-errors/cors-error/nuxtjs",
+    "destination": "/paas/nodejs/fix-common-errors/cors-error/nuxtjs/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/parse",
+    "destination": "/one-click-apps/pocketbase/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/nodejs/related-apps/fix-common-errors/cors-error/nestjs",
+    "destination": "/paas/nodejs/fix-common-errors/cors-error/nestjs/",
+    "permanent": true
+  },
+  {
+    "source": "/wp-plus/wp-rocket",
+    "destination": "/one-click-apps/wordpress/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/django/how-tos/related-apps/celery",
+    "destination": "/paas/django/related-apps/celery/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/headless-chrome/how-tos/quick-start",
+    "destination": "/one-click-apps/headless-chrome/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/projects/environment-variables",
+    "destination": "/paas/details/envs/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/soketi/how-tos/quick-start",
+    "destination": "/one-click-apps/soketi/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/django/related-apps/fastapi",
+    "destination": "/paas/docker/related-apps/fastapi/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/details/envs/about",
+    "destination": "/paas/details/envs/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/mattermost/how-tos/quick-start",
+    "destination": "/one-click-apps/mattermost/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/django/related-apps/python",
+    "destination": "/paas/python/getting-started/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/imgproxy/how-tos/quick-start",
+    "destination": "/one-click-apps/imgproxy/quick-start",
+    "permanent": true
+  },
+  {
+    "source": "/paas/details/env",
+    "destination": "/paas/details/envs",
+    "permanent": true
+  },
+  {
+    "source": "/paas/disks/manage/route",
+    "destination": "/paas/disks/route/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/disks/manage/create",
+    "destination": "/paas/disks/create/",
+    "permanent": true
+  },
+  {
+    "source": "/one-click-apps/wordpress/how-tos/quick-start",
+    "destination": "/one-click-apps/wordpress/quick-start/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/nodejs/related-apps/fix-common-errors/cors-error/fastify",
+    "destination": "/paas/nodejs/fix-common-errors/cors-error/fastify/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/laravel/fix-common-errors/upload-size-limit",
+    "destination": "/paas/laravel/fix-common-errors/upload-limit-size/",
+    "permanent": true
+  },
+  {
+    "source": "/app-deploy/laravel/deploy",
+    "destination": "/paas/laravel/how-tos/deploy-app/",
+    "permanent": true
+  },
+  {
+    "source": "/disks/file-browser",
+    "destination": "/paas/disks/ftp-access/",
+    "permanent": true
+  },
+  {
+    "source": "/storage/laravel",
+    "destination": "/object-storage/how-tos/connect-via-platform/laravel/",
+    "permanent": true
+  },
+  {
+    "source": "/object-storage/how-tos/see-file",
+    "destination": "/object-storage/how-tos/download-file/",
+    "permanent": true
+  },
+  {
+    "source": "/disks/about",
+    "destination": "/paas/disks/about/",
+    "permanent": true
+  },
+  {
+    "source": "/client-api/database",
+    "destination": "/references/api/about/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/docker/related-apps/go",
+    "destination": "/paas/go/getting-started/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/golang/:g1*",
+    "destination": "/paas/go/:g1",
+    "permanent": true
+  },
+  {
+    "source": "/tv/courses/golang",
+    "destination": "/tv/courses/go/",
+    "permanent": true
+  },
+  {
+    "source": "/paas/docker/related-apps/fastapi",
+    "destination": "/paas/python/related-apps/fastapi/",
+    "permanent": true
+  },
+  {
+    "source": "/domains/management/:rest*",
+    "destination": "/paas/domains/add-domain/",
+    "permanent": true
+  },
+  {
+    "source": "/ai/connect-to-service/chat-gpt-copilot/:rest*",
+    "destination": "/ai/connect-to-service/kilo-code/",
+    "permanent": true
+  },
+  {
+    "source": "/production-checklist/:rest*",
+    "destination": "/paas/details/health-check/",
+    "permanent": true
+  },
+  {
+    "source": "/ai/teams/:rest*",
+    "destination": "/ai/quick-start/",
+    "permanent": true
+  }
+]

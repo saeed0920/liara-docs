@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+}
+
+model Config {
+  id            Int     @id @default(1)
+  avalaiKeyEnc  String? // AES-256-GCM encrypted, format: iv:tag:cipher (base64)
+  avalaiBaseUrl String  @default("https://api.avalai.ir/v1")
+  defaultModel  String  @default("gpt-4o-mini")
+}
+
+model RequestMetric {
+  id               String   @id @default(cuid())
+  clientUuid       String
+  model            String?
+  promptTokens     Int?
+  completionTokens Int?
+  totalTokens      Int?
+  costEstimate     Float?
+  latencyMs        Int?
+  status           String // ok | error | rate_limited
+  errorType        String?
+  createdAt        DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([clientUuid])
+}
