@@ -209,12 +209,13 @@ const types = [
 
 export default function PlatformIcon({ platform, style = {} }) {
   const type = types.find(type => type.alt === platform);
+  const src = type?.logo?.src ?? type?.logo;
 
-  if(type?.logo?.src ) {
+  if (src) {
     return (
       <img
         className="page-icon"
-        src={type.logo.src}
+        src={src}
         alt={type.alt}
         style={{
           ...style,

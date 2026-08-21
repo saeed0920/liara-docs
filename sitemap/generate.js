@@ -29,6 +29,7 @@ async function generateSitemap() {
       "/sitemap.xml/index",
       "/index",
       "/_document",
+      "/assistant-demo",
       "/sitemap.xml"
     ];
 
