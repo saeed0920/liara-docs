@@ -21,7 +21,6 @@ import {
   assistantReducer,
   initialAssistantState,
   SCENARIOS,
-  textDirection,
 } from "@/lib/assistant/contract.mjs";
 import { mockTransport } from "@/lib/assistant/mock.mjs";
 import {
@@ -33,9 +32,9 @@ import {
 } from "@/lib/assistant/storage.mjs";
 
 const STARTERS = [
+  "برای شروع راهنمایی‌ام کن.",
   "چطور دامنه را به برنامه متصل کنم؟",
   "چطور برنامه را در لیارا مستقر کنم؟",
-  "چطور به دیتابیس PostgreSQL وصل شوم؟",
 ];
 
 const MODES = [
@@ -381,11 +380,11 @@ export default function Assistant() {
               {message.status === "stopped" && <small className="assistant-note">تولید پاسخ متوقف شد.</small>}
             </article>)}
             {state.error && <div className="assistant-error"><strong>پاسخ کامل نشد.</strong><span>{state.error.message}</span>{state.error.retryable && <button onClick={retry}><RotateCcw size={14} /> تلاش دوباره</button>}</div>}
-            {!busy && state.suggestions.length > 0 && <div className="assistant-followups"><span>ادامه گفتگو</span>{state.suggestions.map((suggestion) => <button key={suggestion} onClick={() => ask(suggestion)}>{suggestion}</button>)}</div>}
+            {!busy && state.suggestions.length > 0 && <div className="assistant-followups"><span>{state.suggestionPrompt}</span>{state.suggestions.map((suggestion) => <button key={suggestion} onClick={() => ask(suggestion)}>{suggestion}</button>)}</div>}
           </div>
 
           <form className="assistant-composer" data-near-limit={value.length > 1800} onSubmit={(event) => { event.preventDefault(); ask(value); }}>
-            <textarea ref={inputRef} value={value} dir={textDirection(value)} onChange={(event) => setValue(event.target.value.slice(0, 2000))} onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); ask(value); } }} placeholder="سؤال یا متن خود را بنویسید…" rows={1} aria-label="سؤال از مستندات" />
+            <textarea ref={inputRef} value={value} dir={value ? "auto" : "rtl"} onChange={(event) => setValue(event.target.value.slice(0, 2000))} onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); ask(value); } }} placeholder="سؤال یا متن خود را بنویسید…" rows={1} aria-label="سؤال از مستندات" />
             <footer className="assistant-composer-footer">
               <div><span>{value.length}/2000</span><span>Shift+Enter برای خط جدید</span></div>
               {busy ? <button type="button" className="assistant-stop" onClick={stop} aria-label="توقف پاسخ"><Square size={15} /></button> : <button type="submit" disabled={!value.trim()} aria-label="ارسال سؤال"><Send size={17} /></button>}

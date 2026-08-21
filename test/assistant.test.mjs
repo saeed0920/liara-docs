@@ -3,7 +3,6 @@ import assert from "node:assert/strict";
 import {
   assistantReducer,
   initialAssistantState,
-  textDirection,
   validSource,
   validateEvent,
 } from "../src/lib/assistant/contract.mjs";
@@ -30,6 +29,19 @@ test("mock success follows event contract", async () => {
   assert.deepEqual(types.slice(0, 2), ["meta", "sources"]);
   assert.ok(types.includes("delta"));
   assert.deepEqual(types.slice(-2), ["suggestions", "done"]);
+});
+
+test("guided mock lets UI build question from options", async () => {
+  let choices;
+  for await (const event of mockTransport({ message: "برای شروع راهنمایی‌ام کن" }, { scenario: "success" })) {
+    if (event.type === "suggestions") choices = event;
+  }
+  assert.equal(choices.prompt, "چه کاری می‌خواهید انجام دهید؟");
+  assert.deepEqual(choices.suggestions, [
+    "می‌خواهم برنامه‌ام را مستقر کنم.",
+    "می‌خواهم دامنه متصل کنم.",
+    "می‌خواهم به PostgreSQL وصل شوم.",
+  ]);
 });
 
 test("slow stream honors AbortSignal", async () => {
@@ -86,13 +98,6 @@ test("response preference persists and command mode stays compact", async () => 
   }
   assert.match(answer, /دستور مستقیمی.*وجود ندارد/);
   assert.match(answer, /رکورد.*DNS/);
-});
-
-test("composer defaults RTL and follows first typed language", () => {
-  assert.equal(textDirection(""), "rtl");
-  assert.equal(textDirection("سلام hello"), "rtl");
-  assert.equal(textDirection("hello سلام"), "ltr");
-  assert.equal(textDirection("123 npm install"), "ltr");
 });
 
 test("sources allow internal paths only", () => {

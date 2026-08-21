@@ -15,12 +15,8 @@ export const initialAssistantState = {
   messages: [],
   error: null,
   suggestions: [],
+  suggestionPrompt: "ادامه گفتگو",
 };
-
-export function textDirection(text = "") {
-  const firstLetter = text.match(/[A-Za-z\u0600-\u06FF]/)?.[0];
-  return firstLetter && /[A-Za-z]/.test(firstLetter) ? "ltr" : "rtl";
-}
 
 export function validSource(source) {
   if (!source?.id || !source?.title || !source?.url) return false;
@@ -56,6 +52,7 @@ export function assistantReducer(state, action) {
         phase: "submitting",
         error: null,
         suggestions: [],
+        suggestionPrompt: initialAssistantState.suggestionPrompt,
         messages: [
           ...state.messages,
           action.user,
@@ -68,6 +65,7 @@ export function assistantReducer(state, action) {
         phase: "submitting",
         error: null,
         suggestions: [],
+        suggestionPrompt: initialAssistantState.suggestionPrompt,
         messages: [
           ...state.messages.slice(0, -1),
           { ...action.assistant, content: "", sources: [], status: "streaming" },
@@ -86,6 +84,7 @@ export function assistantReducer(state, action) {
         messages,
         phase: event.type === "done" ? "done" : event.type === "delta" ? "streaming" : state.phase,
         suggestions: event.type === "suggestions" ? event.suggestions : state.suggestions,
+        suggestionPrompt: event.type === "suggestions" ? event.prompt || initialAssistantState.suggestionPrompt : state.suggestionPrompt,
       };
     }
     case "error": {

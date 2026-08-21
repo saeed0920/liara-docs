@@ -80,9 +80,12 @@ function chunks(text, size = 22) {
 
 function tailoredAnswer(message, mode) {
   const text = message.toLowerCase();
+  const guided = /شروع|راهنمایی/.test(text);
   const deploy = /deploy|مستقر|استقرار|راه.?انداز/.test(text);
   const database = /postgres|دیتابیس|database/.test(text);
-  const normal = deploy
+  const normal = guided
+    ? "برای ساختن سؤال دقیق‌تر، یکی از گزینه‌های زیر را انتخاب کنید."
+    : deploy
     ? "برای استقرار، داخل پوشه پروژه دستور `liara deploy --app my-app` را اجرا کنید و `my-app` را با نام برنامه خود عوض کنید."
     : database
       ? "اطلاعات اتصال `PostgreSQL` را از پنل دیتابیس بردارید، در متغیرهای محیطی برنامه قرار دهید و با کتابخانه PostgreSQL زبان خود متصل شوید."
@@ -115,9 +118,10 @@ export async function* mockTransport(request, { signal, scenario = "success", mo
   }
 
   const message = request?.message?.toLowerCase?.() ?? "";
+  const guided = /شروع|راهنمایی/.test(message);
   const deploy = /deploy|مستقر|استقرار|راه.?انداز/.test(message);
   const database = /postgres|دیتابیس|database/.test(message);
-  const sources = scenario === "empty" ? [] : scenario === "rich-content" ? [DOMAIN_SOURCE, SSL_SOURCE] : [deploy ? DEPLOY_SOURCE : database ? DATABASE_SOURCE : DOMAIN_SOURCE];
+  const sources = scenario === "empty" || guided ? [] : scenario === "rich-content" ? [DOMAIN_SOURCE, SSL_SOURCE] : [deploy ? DEPLOY_SOURCE : database ? DATABASE_SOURCE : DOMAIN_SOURCE];
   yield validateEvent({ type: "sources", sources });
   const answer = ["success", "slow"].includes(scenario) ? tailoredAnswer(request?.message ?? "", mode) : answers[scenario] ?? answers.success;
 
@@ -132,7 +136,12 @@ export async function* mockTransport(request, { signal, scenario = "success", mo
 
   if (mode !== "command") yield validateEvent({
     type: "suggestions",
-    suggestions: deploy ? ["متغیرهای محیطی را چطور تنظیم کنم؟", "لاگ استقرار را کجا ببینم؟"] : ["رکوردهای DNS را کجا وارد کنم؟", "فعال شدن SSL چقدر زمان می‌برد؟"],
+    prompt: guided ? "چه کاری می‌خواهید انجام دهید؟" : "ادامه گفتگو",
+    suggestions: guided
+      ? ["می‌خواهم برنامه‌ام را مستقر کنم.", "می‌خواهم دامنه متصل کنم.", "می‌خواهم به PostgreSQL وصل شوم."]
+      : deploy
+        ? ["متغیرهای محیطی را چطور تنظیم کنم؟", "لاگ استقرار را کجا ببینم؟"]
+        : ["رکوردهای DNS را کجا وارد کنم؟", "فعال شدن SSL چقدر زمان می‌برد؟"],
   });
   yield validateEvent({ type: "done", finishReason: "completed", usage: null });
 }

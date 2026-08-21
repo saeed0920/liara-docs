@@ -1,0 +1,40 @@
+schema: spec-driven
+
+context: |
+  Product: Liara Persian documentation and its grounded AI documentation assistant.
+  Docs application: Next.js 16, React 19, Pages Router, PostgreSQL/Prisma, standalone deployment.
+  Retrieval engine: separate Rust repository at ../deepdocsengine using Qdrant and an embedding provider.
+  Completion provider: AvalAI, called only from the Next.js server using admin-managed encrypted configuration.
+  Canonical implementation plan: final-step.md.
+  Architecture boundary: the browser calls only POST /api/docs-query; Next.js calls the private Rust /retrieve endpoint and performs LLM completion.
+  Privacy: do not persist or log prompts, history, answers, source text, raw IP/session values, authorization headers, or secrets.
+  Product language: assistant responses are Persian; specifications and implementation artifacts are English.
+  Current state: assistant UI/mock and legacy /api/chat exist, but the production docs-query path and secure retrieval contract do not.
+
+rules:
+  proposal:
+    - Keep the separate Next.js and Rust repository/deployment boundary explicit.
+    - Treat final-step.md as the source of truth and identify out-of-MVP behavior.
+  specs:
+    - Use RFC 2119-style normative language and Given/When/Then scenarios.
+    - Include limits, failure behavior, privacy constraints, and measurable release gates where relevant.
+    - Do not describe an LLM response as guaranteed correct; specify grounding, citation, abstention, and evaluation behavior.
+  design:
+    - Document trust boundaries, request/data flow, timeout/abort propagation, and rollout/rollback decisions.
+    - Record cross-repository sequencing for docs and ../deepdocsengine.
+  tasks:
+    - Order tasks by executable phase and gate from final-step.md.
+    - Include tests and validation in the same phase as the behavior they verify.
+    - Name the target repository or path for every cross-repository task.
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing

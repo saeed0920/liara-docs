@@ -1,0 +1,5 @@
+schema: spec-driven
+created: 2026-08-21
+goal: Ship a production-ready docs assistant with trusted citations, admin
+  controls, rate limiting, monitoring, evaluation gates, and Liara deployment
+  readiness.
