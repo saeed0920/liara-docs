@@ -1,7 +1,7 @@
-import { validateEvent } from "./contract.mjs";
+import { createEventSequenceValidator } from "./contract.mjs";
 
 export const DOMAIN_SOURCE = {
-  id: "src-domain-1",
+  id: "S1",
   title: "اضافه کردن دامنه خریداری شده به برنامه",
   url: "/paas/domains/add-domain/",
   anchor: "connect-using-cloudflare",
@@ -9,7 +9,7 @@ export const DOMAIN_SOURCE = {
 };
 
 export const SSL_SOURCE = {
-  id: "src-domain-ssl",
+  id: "S2",
   title: "فعال‌سازی SSL دامنه",
   url: "/paas/domains/enable-ssl/",
   anchor: "",
@@ -17,7 +17,7 @@ export const SSL_SOURCE = {
 };
 
 export const DEPLOY_SOURCE = {
-  id: "src-node-deploy",
+  id: "S1",
   title: "استقرار برنامه Node.js",
   url: "/paas/nodejs/how-tos/deploy-app/",
   anchor: "",
@@ -25,7 +25,7 @@ export const DEPLOY_SOURCE = {
 };
 
 export const DATABASE_SOURCE = {
-  id: "src-postgresql-node",
+  id: "S1",
   title: "اتصال Node.js به PostgreSQL",
   url: "/dbaas/postgresql/how-tos/connect-via-platform/nodejs/",
   anchor: "",
@@ -35,7 +35,7 @@ export const DATABASE_SOURCE = {
 const answers = {
   success: "از بخش **دامنه‌ها**، دامنه را اضافه کنید و سه رکورد `DNS` نمایش‌داده‌شده را در سرویس DNS خود تنظیم کنید. سپس «بررسی وضعیت رکوردها» را بزنید.",
   slow: "برای اتصال دامنه، ابتدا دامنه را در پنل اضافه کنید. سپس رکوردهای DNS را ثبت کنید و منتظر تأیید وضعیت بمانید.",
-  empty: "در مستندات فعلی منبع کافی برای پاسخ دقیق پیدا نشد. عبارت دیگری جستجو کنید یا با پشتیبانی لیارا تماس بگیرید.",
+  empty: "منبع کافی پیدا نشد",
   "rich-content": `## اتصال دامنه
 
 مراحل پیشنهادی:
@@ -104,16 +104,29 @@ function tailoredAnswer(message, mode) {
   return normal;
 }
 
+export function mockEnabled(pathname, {
+  nodeEnv = process.env.NODE_ENV,
+  deploymentEnv = process.env.NEXT_PUBLIC_DEPLOYMENT_ENV,
+} = {}) {
+  // Force real transport for development and production
+  // Only use mock on /assistant-demo page in preview mode
+  return deploymentEnv === "preview" && pathname === "/assistant-demo";
+}
+
 export async function* mockTransport(request, { signal, scenario = "success", mode = "normal" } = {}) {
   const delay = scenario === "slow" ? 280 : 45;
-  yield validateEvent({ type: "meta", requestId: `mock-${scenario}`, model: "mock-v1" });
+  const requestId = `mock-${scenario}`;
+  const sequence = createEventSequenceValidator();
+  yield sequence.push({ type: "meta", requestId, model: "mock-v1" });
 
   if (scenario === "rate-limit") {
-    yield validateEvent({ type: "error", code: "rate_limit", message: "تعداد درخواست‌ها زیاد است. یک دقیقه دیگر تلاش کنید.", retryable: true });
+    yield sequence.push({ type: "error", code: "RATE_LIMITED", requestId, retryable: true });
+    sequence.end();
     return;
   }
   if (scenario === "provider-error") {
-    yield validateEvent({ type: "error", code: "provider_error", message: "سرویس پاسخ‌گو نیست. دوباره تلاش کنید.", retryable: true });
+    yield sequence.push({ type: "error", code: "PROVIDER_UNAVAILABLE", requestId, retryable: true });
+    sequence.end();
     return;
   }
 
@@ -121,27 +134,33 @@ export async function* mockTransport(request, { signal, scenario = "success", mo
   const guided = /شروع|راهنمایی/.test(message);
   const deploy = /deploy|مستقر|استقرار|راه.?انداز/.test(message);
   const database = /postgres|دیتابیس|database/.test(message);
-  const sources = scenario === "empty" || guided ? [] : scenario === "rich-content" ? [DOMAIN_SOURCE, SSL_SOURCE] : [deploy ? DEPLOY_SOURCE : database ? DATABASE_SOURCE : DOMAIN_SOURCE];
-  yield validateEvent({ type: "sources", sources });
+  const guidedSources = [
+    { ...DEPLOY_SOURCE, id: "S1" },
+    { ...DOMAIN_SOURCE, id: "S2" },
+    { ...DATABASE_SOURCE, id: "S3" },
+  ];
+  const sources = scenario === "empty" ? [] : guided ? guidedSources : scenario === "rich-content" ? [DOMAIN_SOURCE, SSL_SOURCE] : [deploy ? DEPLOY_SOURCE : database ? DATABASE_SOURCE : DOMAIN_SOURCE];
+  yield sequence.push({ type: "sources", sources });
   const answer = ["success", "slow"].includes(scenario) ? tailoredAnswer(request?.message ?? "", mode) : answers[scenario] ?? answers.success;
 
   for (const [index, text] of chunks(answer).entries()) {
     await wait(delay, signal);
-    yield validateEvent({ type: "delta", text });
+    yield sequence.push({ type: "delta", text });
     if (scenario === "broken-stream" && index === 2) {
-      yield validateEvent({ type: "error", code: "stream_interrupted", message: "ارتباط هنگام دریافت پاسخ قطع شد.", retryable: true });
+      yield sequence.push({ type: "error", code: "UPSTREAM_STREAM_FAILED", requestId, retryable: true });
+      sequence.end();
       return;
     }
   }
 
-  if (mode !== "command") yield validateEvent({
+  if (mode !== "command" && scenario !== "empty") yield sequence.push({
     type: "suggestions",
-    prompt: guided ? "چه کاری می‌خواهید انجام دهید؟" : "ادامه گفتگو",
     suggestions: guided
       ? ["می‌خواهم برنامه‌ام را مستقر کنم.", "می‌خواهم دامنه متصل کنم.", "می‌خواهم به PostgreSQL وصل شوم."]
       : deploy
         ? ["متغیرهای محیطی را چطور تنظیم کنم؟", "لاگ استقرار را کجا ببینم؟"]
         : ["رکوردهای DNS را کجا وارد کنم؟", "فعال شدن SSL چقدر زمان می‌برد؟"],
   });
-  yield validateEvent({ type: "done", finishReason: "completed", usage: null });
+  yield sequence.push({ type: "done", finishReason: "stop", usage: null });
+  sequence.end();
 }
