@@ -1,0 +1,10 @@
+.env
+.env.*
+.git
+.github
+.next
+node_modules
+coverage
+avalAIkey
+npm-debug.log*
+openspec/changes/*/evidence

@@ -1,0 +1,12 @@
+FROM docker-mirror.liara.ir/node:22-alpine
+
+WORKDIR /app
+ENV NODE_ENV=production
+
+COPY package*.json ./
+RUN npm ci
+
+COPY prisma ./prisma
+COPY scripts/validate-deployment-env.mjs ./scripts/validate-deployment-env.mjs
+
+CMD ["sh", "-c", "node scripts/validate-deployment-env.mjs migration && exec node node_modules/prisma/build/index.js migrate deploy"]
