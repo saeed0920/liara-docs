@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "database": "PostgreSQL 17 disposable integration instance",
+  "migrationDeploy": "passed",
+  "twoProcessFinalAllowance": "passed",
+  "allOrNothingFourBucketRollback": "passed",
+  "alignedUtcWindows": "passed",
+  "expiredBucketCleanup": "passed",
+  "databaseOutageFailClosed": "passed",
+  "trustedClientIpExtraction": "passed",
+  "hmacDomainSeparation": "passed",
+  "twoReplicaCacheIsolation": "passed",
+  "maximumConfigPropagationSeconds": 30,
+  "versionedKeyPropagation": "passed"
+}

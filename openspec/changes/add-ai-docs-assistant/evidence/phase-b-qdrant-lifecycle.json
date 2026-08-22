@@ -1,0 +1,10 @@
+{
+  "candidateCollection": "liara-docs-0abf45cb1cf3d38a",
+  "pointsBeforeRestart": 6119,
+  "pointsAfterRestart": 6119,
+  "persistence": "pass",
+  "atomicPromotionRollbackTest": "pass",
+  "previousTargetRetention": "pass",
+  "activeAliasChanged": false,
+  "startupIngestion": false
+}

@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "candidateCollection": "liara-docs-0abf45cb1cf3d38a",
+  "activeAliasChanged": false,
+  "points": 0,
+  "stage": "embedding",
+  "reason": "an embedded base64 image data URI exceeded the provider per-input 8192-token limit",
+  "candidateDisposition": "safe to delete because collection was unused and empty"
+}

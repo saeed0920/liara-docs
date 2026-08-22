@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "candidateCollection": "liara-docs-6a7ae4b254ab20c5",
+  "activeAlias": "liara-docs-active",
+  "activeTarget": "liara-docs-6a7ae4b254ab20c5",
+  "previousCandidateRetained": "liara-docs-0abf45cb1cf3d38a",
+  "pointsAfterRestart": 6119,
+  "vectorDimension": 1536,
+  "corpusDigest": "6d031385e49eef38985b1953de3454f2fe1cad8f3554a8389be9c9f5ab4a80fa",
+  "corpusManifestDigest": "368df1c7182120eb025f97658b967d28ddeb86e3b8dcc93bbe0d78ed5c24cfab",
+  "recallAt5": 0.8125,
+  "abstentionPrecision": 1,
+  "urlValidity": 1,
+  "anchorValidity": 1,
+  "privateRouteTests": "pass",
+  "emptyCorpusSafety": "pass",
+  "atomicPromotion": "pass",
+  "atomicRollbackTest": "pass",
+  "restartPersistence": "pass",
+  "fabricatedClickableCitations": 0,
+  "activeAliasRetrievalSmoke": "pass"
+}

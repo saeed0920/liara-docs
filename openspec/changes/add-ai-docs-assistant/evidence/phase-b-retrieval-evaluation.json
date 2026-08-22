@@ -1,0 +1,589 @@
+{
+  "status": "completed",
+  "datasetVersion": "retrieval-v1",
+  "promptVersion": "prompt-v1",
+  "completionModel": "deepseek-v4-flash",
+  "embeddingProvider": "avalai",
+  "embeddingModel": "text-embedding-3-small",
+  "embeddingDimension": 1536,
+  "chunkerVersion": "markdown-sections-v1",
+  "retrievalVersion": "hybrid-v2",
+  "fusionVersion": "rrf-page-v2",
+  "thresholdVersion": "sufficient-context-v2",
+  "evaluatorVersion": "two-reviewer-rubric-v1",
+  "corpusNamespace": "liara-docs-mdx-fallback-v1",
+  "corpusDigest": "6d031385e49eef38985b1953de3454f2fe1cad8f3554a8389be9c9f5ab4a80fa",
+  "candidateCollection": "liara-docs-ecc58869c5f692b2",
+  "cases": 31,
+  "recallAt5": 0.8125,
+  "subsetRecallAt5": {
+    "simple": 1,
+    "complex": 0.5,
+    "multi-turn": 1
+  },
+  "abstentionPrecision": 1,
+  "urlValidity": 1,
+  "anchorValidity": 1,
+  "sourceCapValid": true,
+  "gates": {
+    "recallAt5": true,
+    "abstentionPrecision": true,
+    "urlValidity": true,
+    "anchorValidity": true
+  },
+  "results": [
+    {
+      "id": "exact-en-pooling",
+      "tags": [
+        "exact-keyword",
+        "simple"
+      ],
+      "label": "answer",
+      "expected": [
+        "/iaas/debian/how-tos/deploy-db/mongodb/#connection-pooling"
+      ],
+      "returned": [
+        "/iaas/debian/how-tos/deploy-db/mongodb/#connection-pooling",
+        "/iaas/debian/how-tos/deploy-db/mongodb/#"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "exact-fa-shell",
+      "tags": [
+        "exact-keyword",
+        "simple"
+      ],
+      "label": "answer",
+      "expected": [
+        "/paas/details/console-shell/#access-to-shell"
+      ],
+      "returned": [
+        "/paas/details/console-shell/#access-to-shell",
+        "/paas/details/console-shell/#",
+        "/paas/details/console-shell/#disconnect-shell-trouble",
+        "/paas/details/console-shell/#install-packages-using-shell"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "typo-en-ssl",
+      "tags": [
+        "typo",
+        "simple"
+      ],
+      "label": "answer",
+      "expected": [
+        "/paas/domains/enable-ssl/#"
+      ],
+      "returned": [
+        "/paas/domains/enable-ssl/#",
+        "/paas/domains/enable-ssl/#use-ssl",
+        "/one-click-apps/wordpress/how-tos/migrate-from-cpanel/#",
+        "/paas/domains/about/#managing-domains"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "colloquial-fa-bucket",
+      "tags": [
+        "colloquial-persian",
+        "simple"
+      ],
+      "label": "answer",
+      "expected": [
+        "/object-storage/about/#what-is-bucket"
+      ],
+      "returned": [
+        "/object-storage/about/#what-is-bucket",
+        "/object-storage/about/#liara-object-storage",
+        "/object-storage/about/#what-is-object-storage",
+        "/object-storage/about/#also-read"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "colloquial-fa-ai-logs",
+      "tags": [
+        "colloquial-persian",
+        "page-context",
+        "simple"
+      ],
+      "label": "answer",
+      "expected": [
+        "/ai/details/logs/#"
+      ],
+      "returned": [
+        "/ai/details/logs/#",
+        "/ai/details/about/#"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "simple-en-email",
+      "tags": [
+        "simple",
+        "factual"
+      ],
+      "label": "answer",
+      "expected": [
+        "/email-server/about/#what-is-transactional-email"
+      ],
+      "returned": [
+        "/email-server/about/#what-is-transactional-email",
+        "/email-server/about/#",
+        "/email-server/about/#what-is-email-server",
+        "/email-server/about/#liara-email-server"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "simple-fa-ai",
+      "tags": [
+        "simple",
+        "factual"
+      ],
+      "label": "answer",
+      "expected": [
+        "/ai/about/#what-is-aiaas"
+      ],
+      "returned": [
+        "/ai/about/#",
+        "/ai/about/#what-is-aiaas",
+        "/ai/about/#liara-provided-ais",
+        "/ai/about/#foundations"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "simple-en-docker-mirror",
+      "tags": [
+        "simple",
+        "exact-keyword"
+      ],
+      "label": "answer",
+      "expected": [
+        "/mirrors/docker/#"
+      ],
+      "returned": [
+        "/mirrors/docker/#",
+        "/mirrors/docker/#unset-mirrors",
+        "/mirrors/about/#container-registry-mirrors",
+        "/mirrors/about/#"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "workflow-fa-mariadb-backup",
+      "tags": [
+        "workflow",
+        "multi-step"
+      ],
+      "label": "answer",
+      "expected": [
+        "/dbaas/mariadb/how-tos/create-backup/#",
+        "/dbaas/mariadb/how-tos/restore-backup/#"
+      ],
+      "returned": [
+        "/dbaas/mariadb/how-tos/create-backup/#",
+        "/ai/cookbook/rag-chatbot/#project-setup",
+        "/dbaas/mariadb/quick-setup/#"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "workflow-en-mongodb-backup",
+      "tags": [
+        "workflow",
+        "multi-step"
+      ],
+      "label": "answer",
+      "expected": [
+        "/dbaas/mongodb/how-tos/create-backup/#",
+        "/dbaas/mongodb/how-tos/restore-backup/#"
+      ],
+      "returned": [
+        "/dbaas/mongodb/how-tos/create-backup/#"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "complex-fa-domain-ssl",
+      "tags": [
+        "complex",
+        "synthesis"
+      ],
+      "label": "answer",
+      "expected": [
+        "/iaas/ubuntu/how-tos/connect-domain/#",
+        "/paas/domains/enable-ssl/#"
+      ],
+      "returned": [
+        "/iaas/ubuntu/how-tos/connect-domain/#"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "complex-en-wildcard-ssl",
+      "tags": [
+        "complex",
+        "synthesis"
+      ],
+      "label": "answer",
+      "expected": [
+        "/paas/domains/add-wildcard-domain/#differences-between-ssl-certificates",
+        "/paas/domains/enable-ssl/#"
+      ],
+      "returned": [
+        "/paas/domains/add-wildcard-domain/#differences-between-ssl-certificates",
+        "/paas/domains/add-wildcard-domain/#disadvantages-of-wildcard-domains",
+        "/paas/domains/add-wildcard-domain/#"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "page-context-fa-shell-disconnect",
+      "tags": [
+        "page-context",
+        "troubleshooting"
+      ],
+      "label": "answer",
+      "expected": [
+        "/paas/details/console-shell/#disconnect-shell-trouble"
+      ],
+      "returned": [
+        "/paas/details/console-shell/#disconnect-shell-trouble",
+        "/paas/details/console-shell/#access-to-shell",
+        "/paas/details/console-shell/#",
+        "/paas/details/console-shell/#install-packages-using-shell"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "page-context-en-full-log",
+      "tags": [
+        "page-context",
+        "simple"
+      ],
+      "label": "answer",
+      "expected": [
+        "/ai/details/full-log-request/#see-full-details-of-a-request"
+      ],
+      "returned": [
+        "/ai/details/full-log-request/#",
+        "/ai/details/full-log-request/#see-full-details-of-a-request"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "multi-turn-fa-length-1",
+      "tags": [
+        "multi-turn",
+        "history-1"
+      ],
+      "label": "answer",
+      "expected": [
+        "/mirrors/docker/#unset-mirrors"
+      ],
+      "returned": [
+        "/mirrors/docker/#unset-mirrors",
+        "/mirrors/docker/#",
+        "/dbaas/postgresql/quick-setup/#",
+        "/ai/cookbook/natural-language-postgres/#update-query-viewer"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "multi-turn-en-length-5",
+      "tags": [
+        "multi-turn",
+        "history-5"
+      ],
+      "label": "answer",
+      "expected": [
+        "/paas/disks/move-files-to-bucket/#"
+      ],
+      "returned": [
+        "/paas/disks/move-files-to-bucket/#"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "multi-turn-fa-length-10",
+      "tags": [
+        "multi-turn",
+        "history-10",
+        "stale-assistant-claim"
+      ],
+      "label": "answer",
+      "expected": [
+        "/dbaas/mongodb/how-tos/restore-backup/#"
+      ],
+      "returned": [
+        "/dbaas/mongodb/how-tos/restore-backup/#"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "ambiguity-fa-database",
+      "tags": [
+        "ambiguity",
+        "clarification",
+        "safety-critical"
+      ],
+      "label": "clarify",
+      "expected": [],
+      "returned": [
+        "/dbaas/mssql/create-user/#create-readonly-user",
+        "/dbaas/postgresql/create-user/#create-readonly-user",
+        "/iaas/disks/see-disks/#what-is-secondary-disk"
+      ],
+      "matched": 0,
+      "insufficientContext": false
+    },
+    {
+      "id": "ambiguity-en-domain",
+      "tags": [
+        "ambiguity",
+        "clarification"
+      ],
+      "label": "clarify",
+      "expected": [],
+      "returned": [
+        "/iaas/debian/how-tos/connect-domain/#",
+        "/iaas/ubuntu/how-tos/connect-domain-dns-challenge/#",
+        "/iaas/ubuntu/how-tos/connect-domain/#",
+        "/iaas/ubuntu/how-tos/setup-stack/lamp/#"
+      ],
+      "matched": 0,
+      "insufficientContext": false
+    },
+    {
+      "id": "insufficient-en-axolotl",
+      "tags": [
+        "insufficient-context",
+        "out-of-scope"
+      ],
+      "label": "abstain",
+      "expected": [],
+      "returned": [],
+      "matched": 0,
+      "insufficientContext": true
+    },
+    {
+      "id": "insufficient-fa-gearbox",
+      "tags": [
+        "insufficient-context",
+        "out-of-scope"
+      ],
+      "label": "abstain",
+      "expected": [],
+      "returned": [],
+      "matched": 0,
+      "insufficientContext": true
+    },
+    {
+      "id": "insufficient-fa-penguin-migration",
+      "tags": [
+        "insufficient-context",
+        "out-of-scope"
+      ],
+      "label": "abstain",
+      "expected": [],
+      "returned": [],
+      "matched": 0,
+      "insufficientContext": true
+    },
+    {
+      "id": "injection-en-shell",
+      "tags": [
+        "prompt-injection",
+        "security"
+      ],
+      "label": "answer",
+      "expected": [
+        "/paas/details/console-shell/#access-to-shell"
+      ],
+      "returned": [
+        "/paas/details/console-shell/#",
+        "/paas/details/console-shell/#access-to-shell",
+        "/paas/details/console-shell/#disconnect-shell-trouble",
+        "/paas/details/console-shell/#install-packages-using-shell"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "injection-fa-source",
+      "tags": [
+        "prompt-injection",
+        "security"
+      ],
+      "label": "answer",
+      "expected": [
+        "/object-storage/about/#what-is-bucket"
+      ],
+      "returned": [
+        "/object-storage/about/#what-is-bucket",
+        "/object-storage/about/#liara-object-storage",
+        "/object-storage/about/#what-is-object-storage",
+        "/object-storage/about/#also-read"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "workflow-en-create-bucket-cli",
+      "tags": [
+        "workflow",
+        "exact-keyword"
+      ],
+      "label": "answer",
+      "expected": [
+        "/references/cli/create-bucket/#"
+      ],
+      "returned": [
+        "/references/cli/create-bucket/#",
+        "/references/cli/create-bucket/#command-parameters",
+        "/references/cli/about/#bucket-commands"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "workflow-fa-shell-package",
+      "tags": [
+        "workflow",
+        "destructive-command-warning"
+      ],
+      "label": "answer",
+      "expected": [
+        "/paas/details/console-shell/#install-packages-using-shell"
+      ],
+      "returned": [
+        "/paas/details/console-shell/#install-packages-using-shell",
+        "/paas/details/console-shell/#access-to-shell",
+        "/paas/details/console-shell/#",
+        "/paas/details/console-shell/#disconnect-shell-trouble"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "typo-fa-email",
+      "tags": [
+        "typo",
+        "simple"
+      ],
+      "label": "answer",
+      "expected": [
+        "/email-server/about/#what-is-transactional-email"
+      ],
+      "returned": [
+        "/email-server/about/#what-is-transactional-email",
+        "/email-server/about/#liara-email-server",
+        "/email-server/about/#",
+        "/email-server/about/#what-is-email-server"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "typo-en-mirror-disable",
+      "tags": [
+        "typo",
+        "simple"
+      ],
+      "label": "answer",
+      "expected": [
+        "/mirrors/docker/#unset-mirrors"
+      ],
+      "returned": [
+        "/mirrors/docker/#",
+        "/mirrors/docker/#unset-mirrors",
+        "/mirrors/ghcr/#",
+        "/mirrors/k8s/#"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "complex-fa-email-dns",
+      "tags": [
+        "complex",
+        "synthesis"
+      ],
+      "label": "answer",
+      "expected": [
+        "/email-server/about/#what-is-email-server",
+        "/dns-management-system/details/supported-records/#mail-records"
+      ],
+      "returned": [
+        "/email-server/about/#what-is-email-server",
+        "/email-server/about/#what-is-transactional-email",
+        "/email-server/about/#liara-email-server",
+        "/email-server/about/#pop3-imap-protocols",
+        "/email-server/about/#"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "complex-en-ai-models-logs",
+      "tags": [
+        "complex",
+        "synthesis"
+      ],
+      "label": "answer",
+      "expected": [
+        "/ai/about/#liara-provided-ais",
+        "/ai/details/logs/#"
+      ],
+      "returned": [
+        "/ai/about/#",
+        "/ai/about/#what-is-aiaas",
+        "/ai/about/#foundations",
+        "/ai/about/#liara-provided-ais"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    },
+    {
+      "id": "page-context-fa-mongodb-inspector",
+      "tags": [
+        "page-context",
+        "simple"
+      ],
+      "label": "answer",
+      "expected": [
+        "/dbaas/mongodb/inspector/#select-database"
+      ],
+      "returned": [
+        "/dbaas/mongodb/inspector/#select-database",
+        "/dbaas/mongodb/inspector/#select-collection",
+        "/dbaas/mongodb/inspector/#execute-query",
+        "/dbaas/mongodb/inspector/#delete-database",
+        "/dbaas/mongodb/inspector/#rename-collection"
+      ],
+      "matched": 1,
+      "insufficientContext": false
+    }
+  ]
+}

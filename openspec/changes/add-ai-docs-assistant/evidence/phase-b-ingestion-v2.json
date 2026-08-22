@@ -1,0 +1,21 @@
+{
+  "activeAliasChanged": false,
+  "candidateCollection": "liara-docs-6a7ae4b254ab20c5",
+  "corpusDigest": "6d031385e49eef38985b1953de3454f2fe1cad8f3554a8389be9c9f5ab4a80fa",
+  "corpusManifestDigest": "368df1c7182120eb025f97658b967d28ddeb86e3b8dcc93bbe0d78ed5c24cfab",
+  "embeddedPoints": 6119,
+  "embeddingModel": "text-embedding-3-small",
+  "embeddingProvider": "avalai",
+  "files": 1142,
+  "namespace": "liara-docs-mdx-fallback-v1",
+  "points": 6119,
+  "status": "verified",
+  "vectorDimension": 1536,
+  "qdrantPoints": 6119,
+  "payloadIndexes": [
+    "filename",
+    "text",
+    "url"
+  ],
+  "activeAliases": []
+}

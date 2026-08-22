@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "assistantEnabled": false,
+  "migrationApply": "passed",
+  "applicationRollbackCompatibility": "passed",
+  "browserKeyMasking": "passed",
+  "databaseEncryptionCapture": "passed",
+  "logSecretCapture": "passed",
+  "metricAuditCacheProhibitedContent": "passed",
+  "twoProcessAtomicLimit": "passed",
+  "independentEncryptionHmacEngineTokenRotation": "passed"
+}
