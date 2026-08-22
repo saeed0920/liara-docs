@@ -92,12 +92,6 @@
             </url>
           
             <url>
-              <loc>https://docs.liara.ir/ai/ai-sdk-errors/ai-api-call-error/</loc>
-              <changefreq>daily</changefreq>
-              <priority>0.7</priority>
-            </url>
-          
-            <url>
               <loc>https://docs.liara.ir/ai/ai-sdk-ui/about/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
@@ -776,7 +770,19 @@
             </url>
           
             <url>
+              <loc>https://docs.liara.ir/api/config/test/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
               <loc>https://docs.liara.ir/api/config/</loc>
+              <changefreq>daily</changefreq>
+              <priority>0.7</priority>
+            </url>
+          
+            <url>
+              <loc>https://docs.liara.ir/api/docs-query/</loc>
               <changefreq>daily</changefreq>
               <priority>0.7</priority>
             </url>
