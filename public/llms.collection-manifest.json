@@ -3,8 +3,8 @@
   "namespace": "liara-docs-generated-v1",
   "corpusDigest": "6aebeb01d671cadce1bdc8c6185d2b0ca15db4cc0f93c05018e3371e40d5b5ca",
   "corpusManifestDigest": "97f120d408d230eafda38156db020d59734f68c52f7ecfe8509161b0169d8c1c",
-  "corpusCommit": "c1537e59ee90dee28c066936a0fd2ca80d661862",
-  "buildTimestamp": "2026-08-22T15:36:02+03:30",
+  "corpusCommit": "6642fffe71ea90324b2b2a37ecfac098082321aa",
+  "buildTimestamp": "2026-08-22T15:36:18+03:30",
   "embedding": {
     "provider": "avalai",
     "model": "text-embedding-3-small",
