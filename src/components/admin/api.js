@@ -15,7 +15,8 @@ export const api = {
   login: (username, password) =>
     req("/api/login", { method: "POST", body: JSON.stringify({ username, password }) }),
   logout: () => req("/api/logout", { method: "POST" }),
-  stats: (days) => req(`/api/stats?days=${days}`),
+  stats: (filters) => req(`/api/stats?${new URLSearchParams(Object.entries(filters).filter(([, value]) => value !== ""))}`),
   getConfig: () => req("/api/config"),
   putConfig: (data) => req("/api/config", { method: "PUT", body: JSON.stringify(data) }),
+  testConfig: (data) => req("/api/config/test", { method: "POST", body: JSON.stringify(data) }),
 };

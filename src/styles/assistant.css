@@ -17,9 +17,14 @@
   cursor: pointer;
 }
 .assistant-launcher:hover { transform: translateY(-2px); }
+.assistant-launcher:focus-visible,
+.assistant-dialog button:focus-visible,
+.assistant-tutorial button:focus-visible { outline: 3px solid #60a5fa; outline-offset: 2px; }
+.assistant-composer textarea:focus-visible { outline: 0; border: 0; }
 .assistant-launcher kbd { margin-right: 4px; padding: 2px 6px; border: 1px solid #ffffff30; border-radius: 5px; color: #bfdbfe; font: 11px monospace; }
 
 .assistant-dialog {
+  box-sizing: border-box;
   width: min(460px, calc(100vw - 32px));
   height: calc(100dvh - 32px);
   max-height: none;
@@ -33,7 +38,7 @@
   box-shadow: 0 30px 80px #1018283d;
 }
 .assistant-dialog::backdrop { background: #11182745; backdrop-filter: blur(3px); }
-.assistant-panel { display: grid; grid-template-rows: auto 1fr auto; height: 100%; }
+.assistant-panel { display: grid; grid-template-rows: auto 1fr auto; min-width: 0; height: 100%; }
 .assistant-panel > header { display: flex; align-items: center; justify-content: space-between; min-height: 70px; padding: 12px 16px; border-bottom: 1px solid #dfe3ea; background: #fff; }
 .assistant-brand { display: flex; align-items: center; gap: 10px; }
 .assistant-brand > span { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; color: #fff; background: #2563eb; transform: rotate(-4deg); }
@@ -44,7 +49,7 @@
 .assistant-actions button, .assistant-code button { display: grid; place-items: center; width: 36px; height: 36px; border: 0; border-radius: 9px; color: inherit; background: transparent; cursor: pointer; }
 .assistant-actions button:hover, .assistant-code button:hover { background: #eef1f5; }
 
-.assistant-thread { overflow-y: auto; overscroll-behavior: contain; padding: 22px 18px 32px; scroll-behavior: smooth; }
+.assistant-thread { min-width: 0; overflow-y: auto; overscroll-behavior: contain; padding: 22px 18px 32px; scroll-behavior: smooth; }
 .assistant-empty { min-height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 .assistant-orbit { display: grid; place-items: center; width: 62px; height: 62px; margin-bottom: 18px; border: 1px solid #333; border-radius: 50%; background: radial-gradient(circle at 65% 35%, #93c5fd 0 18%, #fbfbfb 19% 100%); box-shadow: 7px 7px 0 #dbeafe; }
 .assistant-empty h2 { max-width: 330px; margin: 0; font-size: 22px; font-weight: 800; letter-spacing: -.5px; }
@@ -65,6 +70,7 @@
 .assistant-markdown li { margin: 5px 0; list-style: inherit; line-height: 1.9; }
 .assistant-markdown code { padding: 1px 5px; border-radius: 5px; color: #1d4ed8; background: #dbeafe; font-family: ui-monospace, monospace; direction: ltr; }
 .assistant-markdown a { display: inline-flex; align-items: center; gap: 3px; color: #1769aa; text-decoration: underline; }
+.assistant-citation { display: inline; padding: 0 2px; border: 0; color: #1d4ed8; background: transparent; font: 700 12px ui-monospace, monospace; text-decoration: underline; cursor: pointer; }
 .assistant-code { margin: 12px 0; overflow: hidden; border: 1px solid #273244; border-radius: 11px; background: #101828; }
 .assistant-code > div { display: flex; align-items: center; justify-content: space-between; height: 34px; padding: 0 8px 0 12px; color: #9ca9bc; border-bottom: 1px solid #ffffff18; font: 11px ui-monospace, monospace; }
 .assistant-code button { width: 30px; height: 28px; color: #fff; }
@@ -75,9 +81,10 @@
 .assistant-table th, .assistant-table td { padding: 9px 10px; border-bottom: 1px solid #e4e7ec; text-align: right; white-space: nowrap; }
 .assistant-table th { background: #eef1f5; }
 .assistant-sources { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
-.assistant-sources button { display: flex; align-items: center; gap: 6px; max-width: 100%; min-height: 34px; padding: 5px 9px; border: 1px solid #b8c1cf; border-radius: 9px; color: #344054; background: #fff; font: inherit; font-size: 11px; cursor: pointer; }
+.assistant-sources button { display: flex; align-items: center; gap: 6px; max-width: 100%; min-height: 34px; padding: 5px 9px; overflow-wrap: anywhere; border: 1px solid #b8c1cf; border-radius: 9px; color: #344054; background: #fff; font: inherit; font-size: 11px; cursor: pointer; }
 .assistant-sources button span { display: grid; place-items: center; min-width: 19px; height: 19px; border-radius: 5px; color: #1e3a8a; background: #dbeafe; font: 10px monospace; }
 .assistant-note { color: #a15c00; }
+.assistant-note button { border: 0; color: inherit; background: transparent; font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
 .assistant-error { display: grid; gap: 5px; margin: 10px 0; padding: 12px; border: 1px solid #f0b4ad; border-radius: 10px; color: #8f271f; background: #fff3f1; font-size: 12px; }
 .assistant-error button { display: flex; align-items: center; gap: 5px; width: max-content; margin-top: 5px; border: 0; color: inherit; background: transparent; font: inherit; font-weight: 700; cursor: pointer; }
 .assistant-followups { display: grid; gap: 7px; margin-top: 16px; }
