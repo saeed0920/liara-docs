@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/paas/php/how-tos/choose-version/
 
-# انتخاب نسخه PHP 
+# انتخاب نسخه PHP
 
 در حال حاضر در پلتفرم لیارا، نسخه‌های زیر از  PHP ارائه می‌شوند: 
 
@@ -16,7 +16,7 @@
 
 > برای تغییر نسخه PHP در برنامه‌های لاراول، می‌توانید از [این مستندات](https://docs.liara.ir/paas/laravel/how-tos/choose-version) استفاده کنید.
 
-## Liara Console
+## تغییر نسخه پیش‌فرض
 
 پس از بارگذاری پروژه خود در لیارا، کافیست تا در مرحله انتخاب نسخه، نسخه مورد نظر برنامه‌تان را انتخاب کنید.
 ![how to choose version in liara console](https://media.liara.ir/docs/choose-php-version-of-php-app-via-cosnole.png)

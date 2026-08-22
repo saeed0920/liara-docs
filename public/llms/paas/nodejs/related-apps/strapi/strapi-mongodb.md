@@ -42,7 +42,7 @@ DATABASE_PASSWORD=YDwHkbMjooP62S5Q5msD563s
 
 و از آنجایی که [فایل سیستم لیارا](https://docs.liara.ir/paas/details/file-system) به صورت پیش‌فرض ReadOnly است؛ پس بایستی برای ذخیره media، طبق مستندات [دیسک‌ها](https://docs.liara.ir/paas/disks/create)، یک دیسک ایجاد و آن‌ را به آدرس‌ `app/public/uploads/` متصل کنید.
 
-## Liara Console
+## استقرار برنامه
 
 - در نهایت کافیست تا برنامه خود را با کنسول و پورت 3000، در لیارا آپلود کنید و عملیات استقرار را انجام دهید تا برنامه با موفقیت در لیارا مستقر شود.
 

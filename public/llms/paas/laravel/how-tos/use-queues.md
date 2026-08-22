@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/paas/laravel/how-tos/use-queues/
 
-# کار با Queueها در Laravel 
+# کار با Queueها در Laravel
 
 Queue یا صف، یکی از قابلیت‌های فریم‌ورک لاراول است که به شما 
 اجازه می‌دهد تا وظایف سنگین یا زمان‌بر را به جای اجرای همزمان با درخواست‌های کاربر،

@@ -7,16 +7,16 @@
 
 ![hardware logs](https://media.liara.ir/docs/email-server-dns-records.png)
 
-## رکورد TXT - DKIM  
+## رکورد TXT - DKIM
 این رکورد برای پیکربندی DKIM یا DomainKeys Identified Mail استفاده می‌شود که به ایمیل‌های ارسالی از دامنه‌تان، یک امضای دیجیتال اضافه می‌کند تا از جعل ایمیل جلوگیری کند.
 
-## رکورد TXT - SPF  
+## رکورد TXT - SPF
 رکورد SPF یا Sender Policy Framework، مشخص می‌کند که چه سرورهایی مجاز به ارسال ایمیل از طرف دامنه‌تان هستند. در ایمیل‌سرور لیارا، سرورهای A و MX دامنه به علاوه سرور spf.c1.liara.email مجاز به ارسال ایمیل هستند.
 
-## رکورد MX  
+## رکورد MX
 رکورد MX یا Mail Exchange مشخص می‌کند که ایمیل‌های ورودی برای دامنه‌تان باید به سرور c1.liara.email هدایت شوند. اولویت 10 نشان‌دهنده اولویت دریافت ایمیل است.
 
-## رکورد CNAME  
+## رکورد CNAME
 رکورد CNAME یا Canonical Name مشخص می‌کند که rp.your-domain به rp.c1.liara.email اشاره دارد. توجه کنید که این رکورد نباید از CDN استفاده کند و باید ابر CDN برای آن خاموش باشد.
 
 > همچنین بخوانید: [آشنایی و کار با رکورد DMARC](https://docs.liara.ir/email-server/details/dmarc-record)

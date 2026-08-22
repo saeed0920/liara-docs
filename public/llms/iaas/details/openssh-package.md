@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/iaas/details/openssh-package/
 
-# ابزار OpenSSH 
+# ابزار OpenSSH
 
 [OpenSSH](https://www.openssh.com/) یک ابزار متن‌باز برای برقراری ارتباط امن از طریق پروتکل SSH (Secure Shell) است. این ابزار شامل سرویس‌دهنده sshd، سرویس‌گیرنده ssh و ابزارهایی مانند scp و sftp برای انتقال امن داده‌ها است. OpenSSH از رمزگذاری (encryption)، احراز هویت (authentication) و port forwarding پشتیبانی می‌کند و برای مدیریت امن سرورها در شبکه‌های ناامن استفاده می‌شود. این پروژه توسط OpenBSD توسعه داده شده و روی اکثر سیستم‌عامل‌های یونیکس و لینوکس در دسترس است.
 

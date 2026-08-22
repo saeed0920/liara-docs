@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/ai/cookbook/nextjs/generate-text-with-chat-prompt/
 
-#  تولید متن با ورودی با AI در NextJS
+# تولید متن با ورودی با AI در NextJS
 
 ممکن است مواقعی وجود داشته باشد که بخواهید متنی را بر اساس مجموعه‌ای از پیام‌ها تولید نمایید.  
 قابلیت `chat completion` این امکان را فراهم می‌کند که متن را بر اساس یک رشته از پیام‌ها تولید کنید.

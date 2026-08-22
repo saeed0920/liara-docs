@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/paas/nodejs/how-tos/connect-to-db/prisma/
 
-# اتصال به دیتابیس با استفاده از Prisma در برنامه‌های NodeJS 
+# اتصال به دیتابیس با استفاده از Prisma در برنامه‌های NodeJS
 
 [Video link](https://media.liara.ir/prisma/prisma.mp4)
 

@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/paas/nextjs/how-tos/use-static-html-export/
 
-# استفاده از قابلیت Static HTML Export 
+# استفاده از قابلیت Static HTML Export
 
 قابلیت [Static HTML Export](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports) به شما اجازه می‌دهد تا یک وب‌سایت کاملاً استاتیک ایجاد کنید که می‌تواند بدون نیاز به سرور NodeJS اجرا شود.
 این قابلیت مناسب صفحه‌های landing، وبلاگ‌ها، سامانه‌های خبری و وب‌سایت‌های این‌چنینی هست و از امکانات زیر نیز، پشتیبانی می‌کند:

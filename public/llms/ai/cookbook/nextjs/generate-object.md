@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/ai/cookbook/nextjs/generate-object/
 
-#  تولید آبجکت با AI در NextJS
+# تولید آبجکت با AI در NextJS
 
 توابعی مانند `generateText` و `streamText` امکان تولید متن بدون ساختار را فراهم می‌کنند.  
 اما اگر بخواهید داده‌های ساختاریافته مانند `JSON` تولید کنید، می‌توانید با استفاده از تابع `generateObject` و ارائه‌ی یک طرح‌واره (schema)، ساختار object مورد نظر را مشخص نمایید.

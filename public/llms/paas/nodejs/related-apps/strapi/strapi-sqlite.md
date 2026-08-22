@@ -34,7 +34,7 @@ JWT_SECRET=qvyu4YsbaS03suqri3sZVQ==
 
 و از آنجایی که [https://docs.liara.ir/paas/details/file-system](https://docs.liara.ir/paas/details/file-system) به صورت پیش‌فرض ReadOnly است؛ پس بایستی برای اتصال موفق به دیتابیس SQLite و ذخیره media، طبق مستندات [https://docs.liara.ir/paas/disks/create](https://docs.liara.ir/paas/disks/create)، دو دیسک ایجاد و آن‌ها را به آدرس‌های `app/.tmp/` و `app/public/uploads/` متصل کنید.
 
-## Liara Console
+## استقرار برنامه
 
 در نهایت کافیست تا برنامه خود را با کنسول و پورت 3000، در لیارا آپلود کنید و عملیات استقرار را انجام دهید تا برنامه با موفقیت در لیارا مستقر شود.
 

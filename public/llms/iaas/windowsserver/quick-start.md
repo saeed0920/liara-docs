@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/iaas/windowsserver/quick-start/
 
-# راه‌اندازی سریع سرور مجازی ویندوز 
+# راه‌اندازی سریع سرور مجازی ویندوز
 
 ## Liara Console
 

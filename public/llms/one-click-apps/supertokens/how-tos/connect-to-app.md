@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/one-click-apps/supertokens/how-tos/connect-to-app/
 
-# اتصال به SuperTokens در NextJS 
+# اتصال به SuperTokens در NextJS
 
 برای اتصال SuperTokens به برنامه خود، نیاز به انجام کار خاصی نیست و صرفاً کافیست تا آدرس SuperTokens را با کمک [SDKهای مربوط](https://supertokens.com/docs/community/sdks) به فریم‌ورک انتخابی‌تان، در برنامه قرار دهید.  
 در ادامه، مستندات مربوط به اتصال به SuperTokens در برنامه‌های NextJS آمده است: 

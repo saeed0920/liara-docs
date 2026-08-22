@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/paas/php/how-tos/use-queues/
 
-# کار با Queueها در PHP 
+# کار با Queueها در PHP
 
 Queue یا صف، یکی از قابلیت‌های PHP است که به شما 
 اجازه می‌دهد تا وظایف سنگین یا زمان‌بر را به جای اجرای همزمان با درخواست‌های کاربر،

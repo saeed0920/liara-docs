@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/iaas/ubuntu/quick-start/
 
-# راه‌اندازی سریع سرور مجازی ابری Ubuntu  
+# راه‌اندازی سریع سرور مجازی ابری Ubuntu
 
 ## Liara Console
 

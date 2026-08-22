@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/ai/ai-sdk-core/settings/
 
-# تنظیمات مربوط به AI SDK 
+# تنظیمات مربوط به AI SDK
 
 LLMها معمولاً تنظیماتی را برای بهبود یا تقویت خروجی خود فراهم می‌کنند.
 تمامی توابع AI SDK علاوه بر مدل، [پرامپت](https://docs.liara.ir/ai/foundations/prompts/) و تنظیمات اختصاصی OpenAI، از تنظیمات عمومی زیر نیز پشتیبانی می‌کنند:

@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/ai/ai-sdk-core/tool-calling/
 
-# قابلیت Tool Calling در AI SDK 
+# قابلیت Tool Calling در AI SDK
 
 در `AI SDK`، یک `tool` می‌تواند هم در `generateText` استفاده شود، هم در `streamText`. این کار با قرار دادن یک یا چند Tool در پارامتری به نام `tools`، انجام می‌شود.  
 یک `tool`، شامل سه خصیصه (property)، می‌باشد:
@@ -156,7 +156,7 @@ const allToolCalls = steps.flatMap(step => step.toolCalls);
 console.log(allToolCalls)
 ```
 
-## کال‌بک onStepFinish  
+## کال‌بک onStepFinish
 زمانی که از `generateText` یا `streamText` استفاده می‌کنید؛ می‌توانید یک `callback` از نوع `onStepFinish` تعریف کنید. این `callback` پس از پایان هر مرحله، فراخوانی می‌شود؛ یعنی  
 زمانی که تمام موارد (از جمله متن، `tool call`ها و نتایج tool) برای مرحله بعدی، آماده هستند.  
 در صورت وجود چند مرحله، این `callback`، برای هر مرحله، به‌صورت جداگانه، اجرا می‌شود.

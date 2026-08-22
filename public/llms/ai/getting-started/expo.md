@@ -28,7 +28,7 @@ pnpm create expo-app@latest my-ai-app
 cd my-ai-app
 ```
 
-## نصب وابستگی‌ها  
+## نصب وابستگی‌ها
 با اجرای دستور قرار گرفته در ادامه، پکیج‌های زیر را نصب کنید:
 
 - `ai`: پکیج اصلی AI SDK
@@ -41,7 +41,7 @@ pnpm add @ai-sdk/openai@^1 ai@^4 @ai-sdk/react@^1.2.12 zod
 ```
 > اطمینان حاصل کنید که نسخه‌ی `ai` حداقل ۳.۱ یا بالاتر باشد.
 
-## تنظیم اطلاعات AI  
+## تنظیم اطلاعات AI
 با اجرای دستور زیر (در لینوکس)، یک فایل `env.local.` در مسیر اصلی پروژه ایجاد کنید تا درون آن `baseUrl` هوش مصنوعی و [کلید API لیارا](https://docs.liara.ir/references/api/about/#api-access-key) را، قرار دهید:
 
 ```bash

@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/iaas/debian/quick-start/
 
-# راه‌اندازی سریع سرور مجازی ابری Debian  
+# راه‌اندازی سریع سرور مجازی ابری Debian
 
 ## Liara Console
 

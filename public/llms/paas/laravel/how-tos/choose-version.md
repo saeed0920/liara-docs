@@ -28,7 +28,7 @@
 - Laravel 12.^  
 </ul>
 
-## Liara Console
+## تغییر نسخه پیش‌فرض
 
 پس از بارگذاری پروژه خود در لیارا، کافیست تا در مرحله انتخاب نسخه، نسخه مورد نظر برنامه‌تان را انتخاب کنید.  
 ![how to choose version in liara console](https://media.liara.ir/docs/choose-laravel-php-version-using-console.png)

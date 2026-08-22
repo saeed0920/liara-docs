@@ -150,7 +150,7 @@ const model = wrapLanguageModel({
 
 > این مثال‌ها برای استفاده در محیط Production طراحی نشده‌اند و تنها برای نشان دادن نحوه استفاده از middleware برای بهبود رفتار مدل‌ها ارائه شده‌اند.
 
-### - لاگ‌گیری
+### لاگ‌گیری
 
 این مثال نشان می‌دهد چگونه می‌توان پارامترها و متن تولیدشده توسط یک فراخوانی مدل را لاگ کرد.
 
@@ -206,7 +206,7 @@ export const yourLogMiddleware: LanguageModelV1Middleware = {
 };
 ```
 
-### - کشینگ
+### کشینگ
 
 این مثال نشان می‌دهد چگونه می‌توان یک کش ساده برای متن تولیدشده توسط یک فراخوانی مدل ساخت.
 
@@ -236,7 +236,7 @@ export const yourCacheMiddleware: LanguageModelV1Middleware = {
 };
 ```
 
-### - Retrieval Augmented Generation (RAG)
+### Retrieval Augmented Generation (RAG)
 
 این مثال نشان می‌دهد چگونه می‌توان از RAG به‌عنوان middleware استفاده کرد.
 
@@ -268,7 +268,7 @@ export const yourRagMiddleware: LanguageModelV1Middleware = {
 };
 ```
 
-### - Guardrails
+### Guardrails
 
 Guardrailها روشی برای اطمینان از ایمنی و مناسب بودن متن تولیدشده توسط یک فراخوانی مدل  هستند. این مثال نشان می‌دهد چگونه می‌توان از محافظ‌ها به‌عنوان middleware استفاده کرد.
 

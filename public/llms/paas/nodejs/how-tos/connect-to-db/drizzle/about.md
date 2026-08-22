@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/paas/nodejs/how-tos/connect-to-db/drizzle/about/
 
-# اتصال به دیتابیس با استفاده از Drizzle در برنامه‌های TypeScript 
+# اتصال به دیتابیس با استفاده از Drizzle در برنامه‌های TypeScript
 
 [Drizzle](https://orm.drizzle.team/docs/overview) یک headless
 ORM برای TypeScript است که امروزه بخاطر سرعت بسیار بالا، سادگی و بهینگی

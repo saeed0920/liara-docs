@@ -15,25 +15,105 @@ model Admin {
 }
 
 model Config {
-  id            Int     @id @default(1)
-  avalaiKeyEnc  String? // AES-256-GCM encrypted, format: iv:tag:cipher (base64)
-  avalaiBaseUrl String  @default("https://api.avalai.ir/v1")
-  defaultModel  String  @default("gpt-4o-mini")
+  id                        Int      @id @default(1)
+  avalaiKeyEnc              String? // Versioned AES-256-GCM envelope; never returned to browsers.
+  avalaiKeyVersion          Int?
+  avalaiBaseUrl             String   @default("https://api.avalai.ir/v1")
+  defaultModel              String   @default("gpt-4o-mini")
+  assistantEnabled          Boolean  @default(false)
+  assistantMinuteLimit      Int      @default(10)
+  assistantDayLimit         Int      @default(100)
+  assistantConcurrencyLimit Int      @default(4)
+  metricRetentionDays       Int      @default(30)
+  auditRetentionDays        Int      @default(90)
+  identifierRotationDays    Int      @default(30)
+  updatedAt                 DateTime @updatedAt
+}
+
+model RateLimitBucket {
+  id                   BigInt   @id @default(autoincrement())
+  domain               String
+  subjectHmac          String
+  identifierKeyVersion Int
+  windowKind           String
+  windowStart          DateTime
+  count                Int      @default(0)
+  expiresAt            DateTime
+  updatedAt            DateTime @updatedAt
+
+  @@unique([domain, subjectHmac, windowKind, windowStart])
+  @@index([expiresAt])
 }
 
 model RequestMetric {
-  id               String   @id @default(cuid())
-  clientUuid       String
-  model            String?
+  id                   String   @id @default(cuid())
+  requestId            String?  @unique @db.Uuid
+  providerRequestId    String?
+  requestType          String   @default("chat")
+  model                String?
+  status               String
+  errorType            String?
+  subjectIpHmac        String?
+  subjectSessionHmac   String?
+  identifierKeyVersion Int?
+  inputTokens          Int?
+  outputTokens         Int?
+  estimatedCost        Decimal? @db.Decimal(18, 8)
+  configRateLatencyMs  Int?
+  retrievalLatencyMs   Int?
+  firstByteLatencyMs   Int?
+  totalLatencyMs       Int?
+  sourceCount          Int?
+  abstention           Boolean  @default(false)
+  groundedSuccess      Boolean  @default(false)
+  evaluationFailure    Boolean  @default(false)
+  monitoringFailure    Boolean  @default(false)
+  createdAt            DateTime @default(now())
+
+  // Legacy nullable fields retained only for additive migration compatibility.
+  clientUuid       String?
   promptTokens     Int?
   completionTokens Int?
   totalTokens      Int?
   costEstimate     Float?
   latencyMs        Int?
-  status           String // ok | error | rate_limited
-  errorType        String?
-  createdAt        DateTime @default(now())
 
   @@index([createdAt])
   @@index([clientUuid])
+  @@index([requestType, createdAt])
+  @@index([status, createdAt])
+  @@index([model, createdAt])
+}
+
+model AssistantAudit {
+  id                   String   @id @default(cuid())
+  eventType            String
+  administratorId      String
+  success              Boolean
+  ipHmac               String?
+  identifierKeyVersion Int?
+  metadata             Json     @default("{}")
+  createdAt            DateTime @default(now())
+  expiresAt            DateTime
+
+  @@index([createdAt])
+  @@index([expiresAt])
+  @@index([administratorId, createdAt])
+}
+
+model AssistantReleaseState {
+  id                       Int       @id @default(1)
+  ingestionStatus          String    @default("not_started")
+  evaluationStatus         String    @default("not_started")
+  candidateCollection      String?
+  activeCollection         String?
+  corpusDigest             String?
+  evaluationDatasetVersion String?
+  recallAt5                Float?
+  abstentionPrecision      Float?
+  urlValidity              Float?
+  anchorValidity           Float?
+  lastIngestionAt          DateTime?
+  lastEvaluationAt         DateTime?
+  updatedAt                DateTime  @updatedAt
 }

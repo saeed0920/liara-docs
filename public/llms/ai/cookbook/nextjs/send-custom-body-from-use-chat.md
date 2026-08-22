@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/ai/cookbook/nextjs/send-custom-body-from-use-chat/
 
-# ارسال بدنه‌ی سفارشی از useChat 
+# ارسال بدنه‌ی سفارشی از useChat
 
 > در حال حاضر، `experimental_prepareRequestBody` یک قابلیت آزمایشی است و تنها در فریم‌ورک‌های React و Solid و Vue در دسترس است.
 

@@ -1,6 +1,6 @@
 ﻿Original link: https://docs.liara.ir/ai/ai-sdk-core/error-handling/
 
-# مدیریت خطا در سرویس AI 
+# مدیریت خطا در سرویس AI
 
 ## مدیریت خطاهای معمول
 
