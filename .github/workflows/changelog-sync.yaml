@@ -1,0 +1,136 @@
+name: Sync merged PR to blog changelog
+
+# Fires whenever a PR is closed. We check merged==true below so
+# closed-without-merge PRs are ignored.
+on:
+  pull_request:
+    types: [closed]
+    branches: [main] # liara-docs default branch
+
+permissions:
+  contents: read
+
+jobs:
+  publish-changelog:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the BLOGS repo (not the source repo) — this is where
+      #    we'll write the new changelog file and open the PR from.
+      - name: Checkout blogs repo
+        uses: actions/checkout@v4
+        with:
+          repository: saeed0920/docs-blogs
+          token: ${{ secrets.BLOGS_REPO_TOKEN }} # PAT/fine-grained token with write access to docs-blogs
+          path: blogs
+
+      # 2. Extract description + images from the merged PR, download any
+      #    images into the blogs repo, and write a new changelog entry.
+      - name: Build changelog entry
+        id: build
+        uses: actions/github-script@v7
+        env:
+          BLOGS_TOKEN: ${{ secrets.BLOGS_REPO_TOKEN }}
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+
+            const pr = context.payload.pull_request;
+            const prNumber = pr.number;
+            const title = pr.title;
+            const body = pr.body || '';
+            const mergedAt = pr.merged_at; // ISO string
+            const author = pr.user.login;
+            const sourceRepo = `${context.repo.owner}/${context.repo.repo}`;
+
+            // --- slug ---
+            const slugify = (s) =>
+              s.toLowerCase()
+               .replace(/[^a-z0-9]+/g, '-')
+               .replace(/(^-|-$)/g, '');
+            const dateStr = mergedAt.slice(0, 10); // YYYY-MM-DD
+            const slug = `${dateStr}-${slugify(title)}-${prNumber}`;
+
+            // --- find images in the PR body (markdown + raw <img> tags) ---
+            const mdImageRe = /!\[[^\]]*\]\((https?:\/\/[^\s)]+)\)/g;
+            const htmlImageRe = /<img[^>]+src=["']([^"']+)["'][^>]*>/g;
+            const imageUrls = new Set();
+            let m;
+            while ((m = mdImageRe.exec(body))) imageUrls.add(m[1]);
+            while ((m = htmlImageRe.exec(body))) imageUrls.add(m[1]);
+
+            // --- download images into docs-blogs' public folder ---
+            // Fumadocs serves anything under /public at the site root, so
+            // public/blog/<slug>/image-1.png becomes /blog/<slug>/image-1.png
+            const assetsDir = path.join('blogs', 'public', 'blog', slug);
+            fs.mkdirSync(assetsDir, { recursive: true });
+
+            let newBody = body;
+            let i = 0;
+            for (const url of imageUrls) {
+              i += 1;
+              const ext = (url.split('?')[0].split('.').pop() || 'png').slice(0, 5);
+              const filename = `image-${i}.${ext}`;
+              const localPath = path.join(assetsDir, filename);
+              const publicPath = `/blog/${slug}/${filename}`;
+
+              try {
+                const res = await fetch(url);
+                if (!res.ok) throw new Error(`status ${res.status}`);
+                const buf = Buffer.from(await res.arrayBuffer());
+                fs.writeFileSync(localPath, buf);
+                // swap every occurrence of that url in the body for the local path
+                newBody = newBody.split(url).join(publicPath);
+              } catch (err) {
+                core.warning(`Could not download image ${url}: ${err.message}`);
+              }
+            }
+
+            // --- write the changelog markdown/MDX file ---
+            // NOTE: docs-blogs' content/blog directory + frontmatter shape
+            // is assumed here (standard Fumadocs blog convention). Adjust
+            // the path and fields below if your actual schema differs.
+            const contentDir = path.join('blogs', 'content', 'blog');
+            fs.mkdirSync(contentDir, { recursive: true });
+            const filePath = path.join(contentDir, `${slug}.mdx`);
+
+            // First line of the PR body (if short) doubles as a description;
+            // falls back to the PR title.
+            const firstLine = body.trim().split('\n')[0] || '';
+            const description = (firstLine.length > 0 && firstLine.length <= 160
+              ? firstLine
+              : title).replace(/"/g, '\\"');
+
+            const frontmatter = [
+              '---',
+              `title: "${title.replace(/"/g, '\\"')}"`,
+              `description: "${description}"`,
+              `date: "${dateStr}"`,
+              `author: "${author}"`,
+              `source: "${sourceRepo}#${prNumber}"`,
+              '---',
+              '',
+            ].join('\n');
+
+            fs.writeFileSync(filePath, frontmatter + newBody + '\n');
+
+            core.setOutput('slug', slug);
+            core.setOutput('branch', `changelog/pr-${prNumber}`);
+            core.setOutput('file_path', filePath);
+
+      # 3. Open (or update) a PR in the blogs repo with the new file.
+      - name: Open PR in blogs repo
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.BLOGS_REPO_TOKEN }}
+          path: blogs
+          commit-message: "chore(changelog): add entry for PR #${{ github.event.pull_request.number }}"
+          branch: changelog/pr-${{ github.event.pull_request.number }}
+          title: "Changelog: ${{ github.event.pull_request.title }}"
+          body: |
+            Auto-generated from ${{ github.repository }}#${{ github.event.pull_request.number }}
+
+            Merged by @${{ github.event.pull_request.user.login }}
+          labels: changelog, automated
