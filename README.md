@@ -7,24 +7,24 @@
 This is the **official** documentation of [Liara](https://liara.ir), which is also available at [docs.liara.ir](https://docs.liara.ir). You can have your own documentation by following the steps below:
 
 1. Clone the repository:
-```
+```bash
 git clone https://github.com/liara-cloud/docs.git
 ```
 
 2. Navigate to the directory:
-```
+```bash
 cd docs
 ```
 
 3.  Make sure you have [NodeJS & npm](https://nodejs.org/en) installed. If not, please install them before proceeding.
 
 4. Install the dependencies:
-```
+```bash
 npm install
 ```
 
 5. Run the development server:
-```
+```bash
 npm run dev
 ```
 6. Open your browser and go to `http://localhost:3001`.
