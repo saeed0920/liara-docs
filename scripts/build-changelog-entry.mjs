@@ -13,12 +13,19 @@ const IMAGE_EXTENSIONS = new Map([
 export function extractChangelog(body) {
   const marker = "## Changelog entry";
   const start = body.indexOf(marker);
-  const content = start >= 0 ? body.slice(start + marker.length) : body;
-  return content
-    .split(/^## PR details \(not published\)\s*$/m)[0]
-    .trim()
-    .replace(/(?:^|\n)---\s*$/, "")
-    .trim();
+  const section = (start >= 0 ? body.slice(start + marker.length) : body)
+    .replaceAll("\r\n", "\n")
+    .split(/^[ \t]{0,3}## PR details \(not published\)\s*$/m)[0];
+  const lines = section.split("\n");
+  while (lines[0]?.trim() === "") lines.shift();
+  while (lines.at(-1)?.trim() === "") lines.pop();
+  if (lines.at(-1)?.trim() === "---") lines.pop();
+  while (lines.at(-1)?.trim() === "") lines.pop();
+  if (!lines.length) return "";
+  const indent = Math.min(
+    ...lines.filter((line) => line.trim()).map((line) => line.match(/^[ \t]*/)[0].length),
+  );
+  return lines.map((line) => line.slice(indent)).join("\n");
 }
 
 export function escapeBraces(text) {
@@ -90,7 +97,7 @@ export async function buildChangelogEntry({ event, blogsDir, fetchImpl = fetch, 
   }
 
   const source = `${event.repository.full_name}#${pr.number}`;
-  const sourceMarker = `<!-- source: ${source} -->`;
+  const sourceMarker = `{/* source: ${source} */}`;
   const changelogPath = path.join(blogsDir, "content", "changelog.mdx");
   const current = fs.readFileSync(changelogPath, "utf8");
   if (current.includes(sourceMarker)) return { skip: true, reason: `${source} already exists` };
@@ -100,7 +107,7 @@ export async function buildChangelogEntry({ event, blogsDir, fetchImpl = fetch, 
   let index = 0;
   for (const url of imageUrls(newBody)) {
     index += 1;
-    const directory = path.join(blogsDir, "public", "changelog", "images", slug);
+    const directory = path.join(blogsDir, "content", "images", slug);
     fs.mkdirSync(directory, { recursive: true });
     const destination = path.join(directory, `image-${index}`);
     try {

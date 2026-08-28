@@ -6,7 +6,7 @@ import test from "node:test";
 import { buildChangelogEntry, escapeBraces, extractChangelog } from "./build-changelog-entry.mjs";
 
 test("extracts only public changelog section", () => {
-  const body = `Intro\n## Changelog entry\n## Faster deploys\n\nUseful change.\n\n---\n\n## PR details (not published)\nsecret`;
+  const body = `Intro\n  ## Changelog entry\n   ## Faster deploys\n\n   Useful change.\n\n   ---\n\n   ## PR details (not published)\n   secret`;
   assert.equal(extractChangelog(body), "## Faster deploys\n\nUseful change.");
 });
 
@@ -58,6 +58,10 @@ test("prepends entry, rehosts image, and prevents duplicates", async () => {
   const changelog = fs.readFileSync(path.join(blogsDir, "content", "changelog.mdx"), "utf8");
   assert.match(changelog, /source: saeed0920\/liara-docs#42/);
   assert.match(changelog, /\.\/images\/2026-08-28-faster-deploys-42\/image-1\.png/);
+  assert.equal(
+    fs.existsSync(path.join(blogsDir, "content", "images", "2026-08-28-faster-deploys-42", "image-1.png")),
+    true,
+  );
   assert.doesNotMatch(changelog, /private/);
   assert.equal((await buildChangelogEntry({ event, blogsDir, fetchImpl })).skip, true);
 });
